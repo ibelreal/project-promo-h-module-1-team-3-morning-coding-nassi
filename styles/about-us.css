@@ -71,7 +71,7 @@
     font-family: 'OpenSans';
     color: #54585a;
     text-align: center;
-    margin: 0px 5px 15px 5px; 
+    margin: 0p 0 1rem 0; 
     width:100%;
 
   }
@@ -81,7 +81,7 @@
 transform: scale(0.7);
 margin-bottom: 2rem;
 color:#099d8d;
-line-height: 30px;
+line-height: 1.875rem;
 margin:0rem;
 
 
@@ -97,7 +97,7 @@ margin:0rem;
 
 .about-us-icons-item {
   display: inline;
-  margin: 0 0 0 0px;
+  margin: 0 0 0 0rem;
   list-style: none;
    
   
@@ -228,12 +228,5 @@ display: inline;
 .reverse .about-us-icons {
  align-self: flex-end;
 }
-
-}
-
-@media all and (min-width:768px) {
-
-
-
 
 }
