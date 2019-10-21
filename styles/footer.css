@@ -35,7 +35,6 @@
 }
 
 .footer-menu-li {
-  position: relative;
   box-sizing: border-box;
   display: inline;
 }
@@ -43,8 +42,6 @@
 .footer-link-about-us,
 .footer-link-team,
 .footer-link-contact {
-  width: 114px;
-  height: 60px;
   opacity: 0.75;
   font-size: 0.875rem;
   font-weight: 600;
@@ -56,11 +53,9 @@
 
 .footer-logo {
   margin: 0;
-  /* padding: 1.875rem 0rem; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid seagreen;
 }
 
 .logo-adalab {
@@ -84,14 +79,11 @@
   }
 
   .footer-menu {
-    display: flex;
     flex-direction: row-reverse;
   }
 
   .footer-menu-ul {
     margin-right: 2.688rem;
-    height: 5.625rem;
-    width: 20.25rem;
     justify-content: space-around;
     align-items: flex-end;
     margin-bottom: 56px;
@@ -107,6 +99,22 @@
     margin: 0;
   }
 
+}
+
+@media all and (min-width:1200px) {
+  .footer-copy {
+    padding: 0 230px;
+  }
+
+  .footer-menu-ul {
+    padding: 0 220px;
+  }
+
+  .footer-logo {
+    position: relative;
+    justify-content: start;
+    padding: 0 220px;
+  }
 }
 
 a:link {
