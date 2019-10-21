@@ -10,7 +10,8 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik&display=swap");
 
 .container {
-  /*background: pink;*/
+  border: 3px solid green;
+  /*background: pink;
 
   margin: 0 0.9375rem;
   /*0 15px*/
@@ -31,9 +32,9 @@ body {
 }
 
 .team-title {
-  /*border: solid red 2px;*/
+  border: solid red 2px;
 
-  height: 2.813rem;
+  /*height: 2.813rem;
   /*45px*/
 
   font-size: 1.5rem;
@@ -75,20 +76,19 @@ body {
   text-align: center;
 }
 
-@media all and (min-width:48rem
-
-  /*768px*/
-) {
+@media all and (min-width: 768px) {
   .team-container {
-    margin: 2.813rem
-      /*45px*/
+    border: 2px solid red;
+    /*margin: 2.813rem*/
+    /*45px*/
     ;
   }
 
   .team-title {
     color: #099d8d;
-    margin-top: 2.813rem
-      /*45px*/
+    margin-top: 0rem;
+    /*margin-top: 2.813rem*/
+    /*45px*/
     ;
   }
 
@@ -97,10 +97,7 @@ body {
   }
 }
 
-@media all and (min-width:75rem
-
-  /*1200px*/
-) {
+@media all and (min-width: 1200px) {
   .container {
     margin-top: 45px;
   }
