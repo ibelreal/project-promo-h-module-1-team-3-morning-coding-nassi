@@ -1,4 +1,5 @@
 .footer {
+  box-sizing: border-box;
   border: 1px solid red;
   /* height: 500px; */
   display: flex;
@@ -9,7 +10,7 @@
   margin: 0.9375rem;
 }
 
-.footer-copyright {
+.footer-copy {
   font-size: 0.875rem;
 }
 
@@ -34,9 +35,6 @@
   display: inline;
   font-family: 'OpenSans';
   font-size: 0.875rem;
-
-
-
 }
 
 .footer.link-about-us,
@@ -47,13 +45,19 @@
 }
 
 .footer-logo {
-  box-sizing: border-box;
+  background: #cc212c;
+  font-size: 16px;
+  padding: 1.5rem;
 }
 
-.logo-image {
+.logo-adalab {
+  border: 2px solid seagreen;
   height: 45px;
-  width: 115, 9px;
-  padding: 1.5rem;
+  /* width: 115, 9px; */
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  /* padding: 1.5rem; */
 }
 
 a:link {
