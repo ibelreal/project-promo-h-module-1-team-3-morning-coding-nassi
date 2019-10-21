@@ -230,3 +230,11 @@ display: inline;
 }
 
 }
+
+@media all and (min-width:1200px) {
+
+  .adalabers-item {
+
+width: 60%;
+align-items: center;
+}
