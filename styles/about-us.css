@@ -167,24 +167,36 @@ width: 90%;
 } */
 
  .information-container{
- 
   box-sizing: border-box;
+  border: blue 2px solid;
+  height: 100%;
   display: flex;
   flex-direction: column;
   width: 70%; 
 
-
-  
-
- 
-   
  }
 
- /* .adalabers-name{
+ .adalabers-name{
+   margin-left: 1.7rem;
    text-align: left;
-   margin-left: 1.5rem;
-  
- } */
+     
+ } 
+
+ .reverse .adalabers-name{
+   margin-right: 3rem;
+  text-align: right;
+    
+} 
+
+.reverse .adalaber-text{
+
+  text-align: right;
+  width: 100%;
+} 
+
+.reverse .about-us-icons{
+  text-align: right;
+}
 
  /* .name-reverse{
   font-family: 'OpenSans';
@@ -227,11 +239,15 @@ margin-block-start:0.9375rem;
  .aside-list{
   padding-inline-start: 0rem;
   padding-inline-end: 0rem;
-  display: flex;
-  margin: 0rem;
+  display: inline-block;
+ margin: 0rem;
+ text-align: left;
   
  }
 
+ .reverse .aside-list {
+   text-align: right;
+ }
  /* .aside-list-reverse{
   padding-inline-end: 0rem;
    padding-inline-start: 0rem;
