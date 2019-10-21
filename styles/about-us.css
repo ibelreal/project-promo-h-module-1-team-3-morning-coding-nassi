@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap");
+
+.about-us{
+  display: flex;
+  
+  /*Flex*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  
+}
+  
+  .about-us-title{
+  
+  font-family: 'Rubik';
+  font-size: 1.5rem;
+  text-align: center;
+  color: #099d8d;
+  width:100%;
+
+
+  align-items: center;
+  
+  }
+
+  .adalaber-text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'OpenSans';
+    color: #54585a;
+    text-align: center;
+    margin: 0px 5px 15px 5px; 
+    width:100%;
+
+  }
+
+  .adalabers-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+     
+  } 
+  
+  .adalabers-name{
+  font-family: 'OpenSans';
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+
+  }
+
+ 
+  
+  .adalaber-img{
+    width: 100%;
+    height: 100%;
+    border: border: 5px solid rgba(0, 0, 0, 0.08);
+
+    
+
+}
+
+.img-container {
+  text-align: center;
+  width:45%;
+  height:45%;
+  margin:0rem;
+  padding: 0rem;
+  
+}
+
+.about-us-icons{
+transform: scale(0.7);
+margin-bottom: 2rem;
+color:#099d8d;
+line-height: 30px;
+margin:0rem;
+
+
+}
+
+.aside-list{
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+  padding: 0rem;
+  margin-bottom: 2.5rem;
+
+}
+
+.about-us-icons-item {
+  display: inline;
+  margin: 0 15px;
+  list-style: none;
+  
+ 
+  
+}
+
+.information-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin:0rem;
+padding: 0rem;
+width: 90%;
+
+}
+
+.about-us-icons-item a {
+  text-decoration: none
+  }
+
+.fab{
+  color: #099d8d;
+  
+}
+
+.fas{
+  color: #099d8d;
+}
+
+/* Comento el container porque está aplicado en el header.css
+
+.container{
+  margin: 0 0.9375rem;
+
+}  */
+
+
+
+@media all and (min-width:768px) and (max-width:1200px) {
+
+/* .about-us{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin: 0rem;
+
+} */
+
+.about-us-container{
+  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem;
+  }
+
+.adalabers-item {
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+  margin-bottom: 3.5rem;
+  align-items: flex-end;
+  width: 90%;
+ 
+ }
+
+.article-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+  width: 90%;
+  /* align-items: flex-end; */
+}
+
+ 
+
+ .img-container{
+   box-sizing: border-box;
+   width: 30vh;
+   margin-right: 1.5rem;
+   margin-left: 1.5rem;
+ }
+
+ .img-container-reverse{
+  box-sizing: border-box;
+  width: 30vh;
+  margin-left: 1.5rem;
+  
+}
+
+ .information-container{
+ 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70vh; 
+  align-items: center;
+
+  /* Como estamos en el eje vertical (column) el flex-basis me permite fijar la altura del .information-container */
+
+ 
+   
+ }
+
+ .adalabers-name{
+   text-align: left;
+   margin-left: 1.5rem;
+  
+ }
+
+ .name-reverse{
+  font-family: 'OpenSans';
+  font-size: 1.25rem;
+  text-align: right;
+  margin-right: 1.5rem;
+
+ }
+
+ .adalaber-container-text{
+   display: flex;
+width: 100%;
+
+
+ }
+
+ 
+
+  .adalaber-text{
+   text-align: left;
+   margin-left: 1rem;
+   
+ } 
+
+
+ .text-reverse{
+   text-align: right;
+   margin-right: 1.5rem;
+   font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'OpenSans';
+    color: #54585a;
+    margin-block-end:0.9375rem;
+margin-block-start:0.9375rem;
+    
+   
+   
+ }
+
+ .aside-list{
+  padding-inline-start: 0rem;
+  padding-inline-end: 0rem;
+  display: flex;
+  margin: 0rem;
+  
+ }
+
+ .aside-list-reverse{
+  padding-inline-end: 0rem;
+   padding-inline-start: 0rem;
+  display: flex;
+   margin: 0rem;
+ }
+
+.about-us-icons {
+display: inline;
+  align-self: flex-start;
+  margin:0rem;
+
+  /*No sé bien qué margen me está cogiendo el .about-us-icons, pero si quiero que se mueva hacia la izquierda, tengo que darle un valor negativo al margin-left. Any ideas?
+
+  margin-left: -20px;
+ }  */
+}
+
+}
+
+@media all and (min-width:1200px) {
+
+  /* .about-us{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0rem;
+    
+    } */
+
+    .about-us-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    }
+
+    
+    .adalabers-item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 3.5rem;
+      width: 70%;
+      align-self: center;
+
+      /* Duda: ¿por qué no me alinea al centro? */
+     
+     }
+    
+    .article-reverse{
+      display: flex;
+      flex-direction: row-reverse;
+      width: 70%;
+      margin-bottom: 3.5rem;
+      align-self: center;
+    }
+    
+     
+    
+     .img-container{
+       box-sizing: border-box;
+       width: 45vh;
+       margin-right: 1.5rem;
+       margin-left: 1.5rem;
+     }
+    
+     .img-container-reverse{
+      box-sizing: border-box;
+      width: 45vh;
+      margin-left: 1.5rem;
+      
+    }
+    
+     .information-container{
+     
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 90%; 
+      align-items: center;
+    
+      /* Como estamos en el eje vertical (column) el flex-basis me permite fijar la altura del .information-container */
+    
+     
+       
+     }
+    
+     .adalabers-name{
+       text-align: left;
+       margin-left: 1.5rem;
+      
+     }
+    
+     .name-reverse{
+      font-family: 'OpenSans';
+      font-size: 1.25rem;
+      text-align: right;
+      margin-right: 1.5rem;
+    
+     }
+    
+     .adalaber-container-text{
+       display: flex;
+    width: 100%;
+    
+    
+     }
+    
+     
+    
+      .adalaber-text{
+       text-align: left;
+       margin-left: 1rem;
+       
+     } 
+    
+    
+     .text-reverse{
+       text-align: right;
+       margin-right: 1.5rem;
+       font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'OpenSans';
+        color: #54585a;
+        margin-block-end:0.9375rem;
+    margin-block-start:0.9375rem;
+        
+       
+       
+     }
+    
+     .aside-list{
+      padding-inline-start: 0rem;
+      padding-inline-end: 0rem;
+      display: flex;
+      margin: 0rem;
+      
+     }
+    
+     .aside-list-reverse{
+      padding-inline-end: 0rem;
+       padding-inline-start: 0rem;
+      display: flex;
+       margin: 0rem;
+     }
+    
+    .about-us-icons {
+    display: inline;
+      align-self: flex-start;
+      margin:0rem;
+    
+      /*No sé bien qué margen me está cogiendo el .about-us-icons, pero si quiero que se mueva hacia la izquierda, tengo que darle un valor negativo al margin-left. Any ideas?
+    
+      margin-left: -20px;
+     }  */
+    }
+
+
+} 
