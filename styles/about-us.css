@@ -1,8 +1,6 @@
 
 .about-us{
   display: flex;
-  
-  /*Flex*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,6 +21,50 @@
   
   }
 
+  .adalabers-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+  } 
+
+  .img-container {
+    text-align: center;
+    width:45%;
+    height:45%;
+    margin:0rem;
+    padding: 0rem;
+    
+  }
+
+
+  .adalaber-img{
+    width: 100%;
+    /* height: 100%; */
+    border: border 5px solid rgba(0, 0, 0, 0.08);
+ 
+  }
+
+  .information-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0rem;
+    padding: 0rem;
+    width: 90%;
+    
+    }
+
+    .adalabers-name{
+      font-family: 'OpenSans';
+      font-size: 1.25rem;
+      text-align: center;
+      width: 100%;
+    
+      }
+
   .adalaber-text{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -34,43 +76,6 @@
 
   }
 
-  .adalabers-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-
-     
-  } 
-  
-  .adalabers-name{
-  font-family: 'OpenSans';
-  font-size: 1.25rem;
-  text-align: center;
-  width: 100%;
-
-  }
-
- 
-  
-  .adalaber-img{
-    width: 100%;
-    /* height: 100%; */
-    border: border 5px solid rgba(0, 0, 0, 0.08);
-    
-    
-
-}
-
-.img-container {
-  text-align: center;
-  width:45%;
-  height:45%;
-  margin:0rem;
-  padding: 0rem;
-  
-}
 
 .about-us-icons{
 transform: scale(0.7);
@@ -94,19 +99,8 @@ margin:0rem;
   display: inline;
   margin: 0 0 0 0px;
   list-style: none;
+   
   
- 
-  
-}
-
-.information-container{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin:0rem;
-padding: 0rem;
-width: 90%;
-
 }
 
 .about-us-icons-item a {
@@ -140,7 +134,7 @@ width: 90%;
   margin-bottom: 3.5rem;
   align-items: flex-end;
   width: 100%;
-  border: 3px solid orange;
+  
  
  }
 
@@ -160,16 +154,9 @@ width: 90%;
    height: auto;
  }
 
- /* .img-container-reverse{
-  box-sizing: border-box;
-  width: 30vh;
-  margin-left: 1.5rem;
-  
-} */
 
  .information-container{
   box-sizing: border-box;
-  border: blue 2px solid;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -199,13 +186,6 @@ width: 90%;
   text-align: right;
 }
 
- /* .name-reverse{
-  font-family: 'OpenSans';
-  font-size: 1.25rem;
-  text-align: right;
-  margin-right: 1.5rem;
-
- } */
 
  .adalaber-container-text{
    display: flex;
@@ -215,27 +195,11 @@ width: 100%;
  }
 
  
-
   .adalaber-text{
    text-align: left;
    margin-left: 1rem;
    
  } 
-
-/* 
- .text-reverse{
-   text-align: right;
-   margin-right: 1.5rem;
-   font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: 'OpenSans';
-    color: #54585a;
-    margin-block-end:0.9375rem;
-margin-block-start:0.9375rem;
-    
-   
-   
- } */
 
  .aside-list{
   padding-inline-start: 0rem;
@@ -249,12 +213,7 @@ margin-block-start:0.9375rem;
  .reverse .aside-list {
    text-align: right;
  }
- /* .aside-list-reverse{
-  padding-inline-end: 0rem;
-   padding-inline-start: 0rem;
-  display: flex;
-   margin: 0rem;
- } */
+
 
 .about-us-icons {
 display: inline;
