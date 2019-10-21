@@ -158,7 +158,7 @@ html{
     /* border: red 1px solid; */
     margin:0rem 0rem;
     position: relative;
-    top: -4rem;  
+    top: -5rem;  
     display: flex;
     justify-content: flex-start;
   }
@@ -176,7 +176,7 @@ html{
     margin: 0rem 2.8125rem;
     padding: 1rem 1rem;
     width: 350px;
-    height: 60px;
+    /* height: 60px; */
     opacity: 0.80;
   }
 
