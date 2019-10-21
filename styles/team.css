@@ -10,7 +10,7 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik&display=swap");
 
 .container {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   /*background: pink;
 
   margin: 0 0.9375rem;
@@ -19,6 +19,7 @@ body {
 
 .team-container {
   /*border: solid black 3px;*/
+
 
   box-sizing: border-box;
 
@@ -32,7 +33,7 @@ body {
 }
 
 .team-title {
-  border: solid red 2px;
+  /* border: solid red 2px; */
 
   /*height: 2.813rem;
   /*45px*/
@@ -54,11 +55,6 @@ body {
 
 .team-article {
   /*border: solid green 2px;*/
-
-  height: 24rem;
-  /*384px*/
-
-
   font-size: 1rem;
   /*16px*/
   font-weight: normal;
@@ -77,12 +73,13 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  .team-container {
+  /* .team-container {
     border: 2px solid red;
+    padding:0px 0px 0px;
     /*margin: 2.813rem*/
-    /*45px*/
+    /* 45px */
     ;
-  }
+  } */
 
   .team-title {
     color: #099d8d;
@@ -98,11 +95,15 @@ body {
 }
 
 @media all and (min-width: 1200px) {
-  .container {
-    margin-top: 45px;
-  }
+  /* .container {
+    margin:0rem;
+  } */
 
   .team-container {
-    margin: 18.75rem
+    margin:0rem;
+    padding:45px 300px 0px;
+
+  }
+
       /*300px*/
   }

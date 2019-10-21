@@ -84,7 +84,7 @@ html{
 }
 
 .section-hero{
-  height: 3.5rem;
+  height: 1rem;
 }
 
 .container-hero{
@@ -154,6 +154,10 @@ html{
     padding: 0rem 0.5625rem;
   }
 
+  .section-hero{
+    height: 0rem;
+  }
+  
   .container-hero{
     /* border: red 1px solid; */
     margin:0rem 0rem;
@@ -202,8 +206,13 @@ html{
     top: -60px; /* esto es lo que ocupa el menu en resoluciones distintas a móvil */
   }
   
-}
+/* EL CONTAINER SE ENCUENTRA SÓLO EN EL HEADER.CSS */
+.container{
+  /* border: red 1px solid; */
+  margin:0rem 2.813rem;
 
+
+}
 
 
 @media all and (min-width:1200px) {
@@ -260,8 +269,12 @@ html{
     margin: 0rem 8.875rem;
     opacity: 70%;
   }
+
+  /* EL CONTAINER SE ENCUENTRA SÓLO EN EL HEADER.CSS */
+.container{
+  /* border: red 1px solid; */
+  margin:0rem 8.688rem;
+  }
+
 }
-
-
-
 
