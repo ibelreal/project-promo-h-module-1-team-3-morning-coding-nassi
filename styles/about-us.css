@@ -233,8 +233,20 @@ display: inline;
 
 @media all and (min-width:1200px) {
 
+  .about-us-container{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    }
+  
   .adalabers-item {
 
-width: 60%;
-align-items: center;
+width: 100%;
+align-self: center;
+} 
+
 }
