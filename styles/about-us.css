@@ -261,4 +261,8 @@ display: inline;
   margin:0rem;
 }
 
+.reverse .about-us-icons {
+ align-self: flex-end;
+}
+
 }
