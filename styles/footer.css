@@ -1,8 +1,6 @@
-/**font-family: 'Rubik', sans-serif;
-font-family: 'Open Sans', sans-serif;**/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik:500&display=swap");
-
 .footer {
+  box-sizing: border-box;
+  border: 1px solid red;
   /* height: 500px; */
   display: flex;
   justify-content: flex-end;
@@ -12,54 +10,68 @@ font-family: 'Open Sans', sans-serif;**/
   margin: 0.9375rem;
 }
 
-.footer__copyright {
+.footer-copy {
   font-size: 0.875rem;
 }
 
-.footer__menu {
+.footer-menu {
   box-sizing: border-box;
   font-size: 0.875rem;
 }
 
-.footer__menu__ul {
+.footer-menu-ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-inline-start: 0px;
-s  font-size: 0.875rem;
-  
-  
+  font-size: 0.875rem;
+
+
 }
 
-.footer__menu__li {
+.footer-menu-li {
   position: relative;
   box-sizing: border-box;
   display: inline;
   font-family: 'OpenSans';
   font-size: 0.875rem;
-  
-  
-  
 }
-.footer__link__about__us,
-.footer__link__team,
-.footer__link__contact {
+
+.footer.link-about-us,
+.footer.link-team,
+.footer.link-contact {
   text-align: center;
-  color:#54585a;
+  color: #54585a;
 }
 
-.logo {
-  box-sizing: border-box;
-}
-
-.logo__image{
-  height: 45px;
-  width: 115,9px;
+.footer-logo {
+  background: #cc212c;
+  font-size: 16px;
   padding: 1.5rem;
 }
 
-a:link {text-decoration:none}
-a:visited {text-decoration:none}
-a:hover{text-decoration:none}
-a:active{text-decoration:none}
+.logo-adalab {
+  border: 2px solid seagreen;
+  height: 45px;
+  /* width: 115, 9px; */
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  /* padding: 1.5rem; */
+}
 
+a:link {
+  text-decoration: none
+}
+
+a:visited {
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: none
+}
+
+a:active {
+  text-decoration: none
+}
