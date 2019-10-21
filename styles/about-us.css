@@ -57,7 +57,7 @@
   .adalaber-img{
     width: 100%;
     height: 100%;
-    border: border: 5px solid rgba(0, 0, 0, 0.08);
+    border: border 5px solid rgba(0, 0, 0, 0.08);
 
     
 
@@ -137,10 +137,10 @@ width: 90%;
 .adalabers-item {
   display: flex;
   flex-direction: row;
-  flex: wrap;
   margin-bottom: 3.5rem;
   align-items: flex-end;
   width: 100%;
+  border: 3px solid orange;
  
  }
 
@@ -171,8 +171,8 @@ width: 90%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  flex-basis: 70%; 
-  align-items: center;
+  width: 70%; 
+
 
   
 
@@ -243,10 +243,6 @@ margin-block-start:0.9375rem;
 display: inline;
   align-self: flex-start;
   margin:0rem;
-
-  /*No sé bien qué margen me está cogiendo el .about-us-icons, pero si quiero que se mueva hacia la izquierda, tengo que darle un valor negativo al margin-left. Any ideas?
-
-  margin-left: -20px;
- }  */
 }
- 
+
+}
