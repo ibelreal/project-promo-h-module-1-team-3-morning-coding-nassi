@@ -42,15 +42,16 @@
 
   .adalaber-img{
     width: 100%;
-    /* height: 100%; */
-    border-radius: 50%;
- 
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+     
   }
 
   .information-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin:0rem;
     padding: 0rem;
     width: 90%;
@@ -62,6 +63,7 @@
       font-size: 1.25rem;
       text-align: center;
       width: 100%;
+      margin-bottom: 0rem; 
     
       }
 
@@ -71,14 +73,14 @@
     font-family: 'OpenSans';
     color: #54585a;
     text-align: center;
-    margin: 0p 0 1rem 0; 
+    margin: 1rem 0; 
     width:100%;
 
   }
 
 
 .about-us-icons{
-transform: scale(0.7);
+/* transform: scale(0.7); */
 margin-bottom: 2rem;
 color:#099d8d;
 line-height: 1.875rem;
@@ -95,25 +97,33 @@ margin:0rem;
 
 }
 
+.aside-list a{
+
+  font-size: 150%;
+}
+
 .about-us-icons-item {
-  display: inline;
-  margin: 0 0 0 0rem;
+  display: inline-block;
+  margin: 0 1rem 0 0;
   list-style: none;
+  padding-left: 2rem;
    
   
 }
 
 .about-us-icons-item a {
-  text-decoration: none
-  }
+  text-decoration: none;
+    }
 
 .fab{
   color: #099d8d;
+
   
 }
 
 .fas{
   color: #099d8d;
+  
 }
 
 
@@ -154,11 +164,7 @@ margin:0rem;
    height: auto;
  }
 
- .adalaber-img{
-   /* height: 100%; */
-  border-radius: 0%;
-
-}
+ 
  .information-container{
   box-sizing: border-box;
   height: 100%;
@@ -183,6 +189,7 @@ margin:0rem;
 .reverse .adalaber-text{
 
   text-align: right;
+  margin-right: 1rem;
   width: 100%;
 } 
 
@@ -218,15 +225,26 @@ width: 100%;
    text-align: right;
  }
 
+ .about-us-icons-item{
+   padding: 0 2rem 0 0;
+ }
+ .reverse .about-us-icons-item {
+   padding: 0 0 0 2rem;
+   
+  
+}
+
+
 
 .about-us-icons {
 display: inline;
   align-self: flex-start;
-  margin:0rem;
+  margin:0 0 0 1rem;
 }
 
 .reverse .about-us-icons {
  align-self: flex-end;
+ margin: 0;
 }
 
 }
