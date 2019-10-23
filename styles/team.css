@@ -9,13 +9,13 @@ body {
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik&display=swap");
 
-.container {
-  /* border: 3px solid green; */
-  /*background: pink;
+/* .container { */
+/* border: 3px solid green; */
+/*background: pink;
 
   margin: 0 0.9375rem;
   /*0 15px*/
-}
+/* } */
 
 .team-container {
   /*border: solid black 3px;*/
@@ -78,7 +78,7 @@ body {
     padding:0px 0px 0px;
     /*margin: 2.813rem*/
   /* 45px */
-  ;
+
 }
 
 */ .team-title {
@@ -92,7 +92,7 @@ body {
 .team-article {
   opacity: 0.67;
 }
-}
+
 
 @media all and (min-width: 1200px) {
   /* .container {
