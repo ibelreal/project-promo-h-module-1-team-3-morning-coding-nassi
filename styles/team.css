@@ -47,7 +47,7 @@ body {
   font-weight: bold;
   line-height: 1.88;
   letter-spacing: normal;
-  color: aqua;
+  color: #099d8d;
 
   margin: 1.875rem 0.9375rem 0rem 0.9375rem;
   /*30px 15px 0px 15px*/
@@ -77,21 +77,21 @@ body {
     border: 2px solid red;
     padding:0px 0px 0px;
     /*margin: 2.813rem*/
-    /* 45px */
-    ;
-  } */
+  /* 45px */
+  ;
+}
 
-  .team-title {
-    color: #099d8d;
-    margin-top: 0rem;
-    /*margin-top: 2.813rem*/
-    /*45px*/
-    ;
-  }
+*/ .team-title {
+  color: #099d8d;
+  margin-top: 0rem;
+  /*margin-top: 2.813rem*/
+  /*45px*/
+  ;
+}
 
-  .team-article {
-    opacity: 0.67;
-  }
+.team-article {
+  opacity: 0.67;
+}
 }
 
 @media all and (min-width: 1200px) {
@@ -100,10 +100,10 @@ body {
   } */
 
   .team-container {
-    margin:0rem;
-    padding:45px 300px 0px;
+    margin: 0rem;
+    padding: 45px 300px 0px;
 
   }
 
-      /*300px*/
-  }
+  /*300px*/
+}

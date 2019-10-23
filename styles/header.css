@@ -47,6 +47,7 @@ html {
   padding-inline-start: 0px;
   display: flex;
   justify-content: space-evenly;
+  background-color: #099d8d;
   flex-wrap: wrap;
   align-items: center;
   padding: 0rem 0rem;
@@ -276,5 +277,4 @@ html {
       /* border: red 1px solid; */
       margin: 0rem 8.688rem;
     }
-
   }
