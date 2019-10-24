@@ -1,0 +1,133 @@
+.footer {
+  width: 100vw;
+  background-color: #ffffff;
+  display: block;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  font-family: OpenSans;
+  margin-top: 0;
+  bottom: 0;
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+  display: block;
+  align-content: center;
+  align-items: center;
+  line-height: 1.25rem;
+  color: #b8b8b9;
+  text-align: center;
+}
+
+.footer-menu {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.footer-menu-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0px;
+  margin: 0;
+}
+
+.footer-menu-li {
+  box-sizing: border-box;
+  display: inline;
+}
+
+.footer-link-about-us,
+.footer-link-team,
+.footer-link-contact {
+  opacity: 0.75;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+
+.footer-logo {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-adalab {
+  height: 45px;
+  width: 115.9px;
+  margin: 30px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+@media all and (min-width:768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-copy {
+    text-align: start;
+    margin: 0;
+    margin-left: 4.313rem;
+  }
+
+  .footer-menu {
+    flex-direction: row-reverse;
+  }
+
+  .footer-menu-ul {
+    margin-right: 2.688rem;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 56px;
+  }
+
+  .footer-logo {
+    position: absolute;
+    transform: translateY(-111px);
+    margin-left: 4.313rem;
+  }
+
+  .logo-adalab {
+    margin: 0;
+  }
+
+}
+
+@media all and (min-width:1200px) {
+  .footer-copy {
+    padding: 0 230px;
+  }
+
+  .footer-menu-ul {
+    padding: 0 220px;
+  }
+
+  .footer-logo {
+    justify-content: start;
+    padding: 0 220px;
+  }
+}
+
+a:link {
+  text-decoration: none
+}
+
+a:visited {
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: none
+}
+
+a:active {
+  text-decoration: none
+}
