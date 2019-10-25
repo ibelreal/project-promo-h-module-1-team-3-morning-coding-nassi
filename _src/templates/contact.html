@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.scss">
+</head>
+
+<body>
+    <main>
+        <section class="contact">
+            <h2 class="contact-title">CONTACTO</h2>
+            <p class="contact-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid obcaecati nemo
+                laborum
+                beatae modi repellendus voluptas nam molestiae quas enim odit fugit voluptate inventore placeat
+                laudantium
+                deleniti, cum pariatur dolor?</p>
+        </section>
+        <section class="form-container">
+            <form action="/signup" method="post">
+                <div class="data-name"><label for="name">Nombre completo <span>*</span></label>
+                    <input placeholder="Nombre" type="text" id="full-name"></div>
+                <div class="data-email"><label for="email-address">Email <span>*</span></label>
+                    <input placeholder="nombre.apellido@mail.com" type="email" id="email-address"></div>
+                <div class="data-phone"><label for="phone">Teléfono</label>
+                    <input placeholder="Ej:123456789" type="number" id="phone-number"></div>
+                <div class="data-message"><label for="message">Mensaje <span>*</span></label>
+                    <input placeholder="¿Qué necesitas?" type="text" id="text-message"></div>
+                <input class="send-buttom" type="submit" value="Enviar">
+            </form>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
