@@ -1,9 +1,10 @@
+@import 'core/variables.scss';
 @import 'core/normalize.scss';
-@import 'core/header.scss';
-@import 'core/team.scss';
-@import 'core/strength.scss';
-@import 'core/about-us.scss';
-@import 'core/icons.scss';
-@import 'core/footer.scss';
+@import 'layout/header.scss';
+@import 'layout/team.scss';
+@import 'layout/strength.scss';
+@import 'layout/about-us.scss';
+@import 'components/icons.scss';
+@import 'layout/footer.scss';
 
 
