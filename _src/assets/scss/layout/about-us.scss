@@ -138,7 +138,7 @@ margin:0rem;
   margin: 0rem;
   }
 
-.adalabers-item {
+.adalabers-item:nth-child(odd) {
   display: flex;
   flex-direction: row;
   margin-bottom: 3.5rem;
@@ -148,12 +148,11 @@ margin:0rem;
  
  }
 
-.reverse{
-  box-sizing: border-box;
+.adalabers-item:nth-child(even){
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 3.5rem;
-  width: 100%;
+  
 } 
 
  .img-container{
@@ -162,6 +161,7 @@ margin:0rem;
    margin-right: 1.5rem;
    margin-left: 1.5rem;
    height: auto;
+   align-self: stretch;
  }
 
  
