@@ -1,6 +1,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap);
 
+@import '../core/variables.scss';
+@import '../core/mixins.scss';
+
 
 .strength-weakness-section{
   background-color: rgba(184, 184, 185,0.2);
@@ -26,9 +29,10 @@
 }
 
 .strength-weakness-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  @include centerColumn;
 }
 
 .strength{
@@ -55,7 +59,7 @@
   font-weight: bold;
   font-size: 1.375rem;
   line-height: 2.813rem;
-  color: #099d8d;
+  color: $darkColorBase;
 }
 
 .strength-weakness-text{
