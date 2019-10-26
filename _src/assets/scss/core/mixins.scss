@@ -1,0 +1,68 @@
+
+@mixin noSpace {
+  margin: 0rem;
+  padding: 0rem;  
+}
+
+@mixin centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin textCenterColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@mixin bigTitle {
+  color: #099d8d;
+  font-family: 'Rubik';
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+// consideramos big title los que son como el título "Equipo"
+
+
+@mixin smallTitle {
+  color: #099d8d;
+  font-family: 'Rubik';
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+// consideramos smallTitle los del tipo de "fortalezas.."
+
+@mixin adalabersName{
+  color: #000000;
+  font-family: 'OpenSans';
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+@mixin headerItem {
+  color: #ffffff;
+  font-family: 'Rubik';
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase; 
+}
+
+@mixin footerItem {
+  color: #54585a;
+  font-family: 'OpenSans';
+  font-size:  0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+@mixin text{
+  color: #54585a;
+  font-family: 'OpenSans';
+  font-size:  1rem;
+  font-weight: 500;
+}
+
