@@ -224,20 +224,21 @@ $colorBase: #099d8d;
 
 @media all and (min-width:1200px) {
 
+  .aboutus{
+    @include centerColumn;
+    
+  }
+
   .adalabers{
   
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: auto;
-    width: 70%;
-    }
+   width: 100%;
+    
   
-  .adalabers__card {
+  &__card {
 
-width: 100%;
+width: 70%;
 align-self: center;
 } 
+  }
 
 }
