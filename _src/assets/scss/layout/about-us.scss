@@ -103,15 +103,38 @@ $colorBase: #099d8d;
   .adalabers__card:nth-child(even) {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     width: 100%;
+    text-align: left;
+    
 
+    .adalabers__name{
+      text-align: left;
+    }
+
+    .adalabers-text{
+      text-align: left;
+    }
+
+    .aboutus__icons--list{
+      text-align: left;
+      
+    }
+
+    .aboutus__icons--item{
+      padding-left: 0rem;
+      padding-right: 1.5rem;
+    }
+
+    
   }
 
   .adalabers__card:nth-child(odd) {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-
+  
+  
     .adalabers__name{
       text-align: right;
     }
@@ -120,8 +143,8 @@ $colorBase: #099d8d;
       text-align: right;
     }
 
-    .aboutus__icons--item{
-      align-self: right;
+    .aboutus__icons--list{
+      text-align: right;
     }
   }
 
@@ -149,83 +172,6 @@ $colorBase: #099d8d;
   
    }
 
-   .adalabers__name{
-    margin-left: 0rem;
-    margin-top: 0rem;
-    text-align: left;
-      
-  } 
- 
-  /*
-  .reverse .adalabers-name{
-    margin-right: 3rem;
-   text-align: right;
-     
- } 
- 
- 
- .reverse .adalaber-text{
- 
-   text-align: right;
-   margin-right: 1rem;
-   width: 100%;
- } 
- 
- .reverse .about-us-icons{
-   text-align: right;
- }
- */
- 
-
- 
- 
-  
- 
-  
-   .adalabers__text{
-    text-align: left;
-    margin-left: 0rem;
-    
-  } 
- 
-  .aside__list{
-   padding-inline-start: 0rem;
-   padding-inline-end: 0rem;
-   display: inline-block;
-  margin: 0rem;
-  text-align: left;
-   
-  }
- 
-  /*
-  .reverse .aside-list {
-    text-align: right;
-  }
- */
-  .aboutus__icons--item{
-    padding: 0 2rem 0 0;
-  }
-  /*
-  .reverse .about-us-icons-item {
-    padding: 0 0 0 2rem;
-    
-   
- }
- 
- */
- 
- .aboutus__icons {
- display: inline;
-   align-self: flex-start;
-   margin:0rem;
- }
- 
- /*
- .reverse .about-us-icons {
-  align-self: flex-end;
-  margin: 0;
- }
- */
 
 
 }
