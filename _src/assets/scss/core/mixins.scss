@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 @mixin textCenterColumn {
@@ -39,7 +40,7 @@
   color: $darkTextColor;
   font-family: $fontFamilyText;
   font-size: $fontSizeAdalabersName;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @mixin headerItem {

@@ -1,286 +1,230 @@
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+
 $colorBase: #099d8d;
 
 
+/* Empiezo a reescribir el SAAS */
 
-@mixin bigTitle(){
-  font-family: 'Rubik';
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  color: $colorBase;
-  text-transform: uppercase;
-  text-align: center;
-
+.aboutus {
+  @include centerColumn;
+  width: 100%;
   
-}
-
-/*
-.about-us{
-  flex-direction: column;
-  align-items: center;  
-  justify-content: center;
-  display: flex;
-  flex-basis: 100%;
-  
-}
-
-*/
-  .aboutus__title{
-
-    @include bigTitle(); 
-
-  }
-
-  .adalabers__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  
-  } 
-
-  .img__container {
-    text-align: center;
-    width:45%;
-    height:45%;
-    margin:0rem;
-    padding: 0rem;
-    
-    
-  }
 
 
-  .adalaber__img{
-    width: 100%;
-    border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
-     
-  }
 
-  .information__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:0rem;
-    padding: 0rem;
-    width: 85%;
-    
-    }
+&__title {
 
-    .adalabers__name{
-      font-family: 'OpenSans';
-      font-size: 1.25rem;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 0rem; 
-    
-      }
-
-  .adalaber__text{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-family: 'OpenSans';
-    color: #54585a;
-    text-align: center;
-    margin: 1rem 0; 
-    width:100%;
-
-  }
-
-
-.aboutus__icons{
-line-height: 1.875rem;
-margin-bottom: 2.5rem;
-
-/*Revisar qué es aboutus__icons y qué es aside__list*/
+  @include bigTitle;
+  @include textCenterColumn;
 
 }
 
-.aside__list{
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
+}
+.adalabers {
+  @include centerColumn;
+ width: 100%;
+  
+
+
+
+&__card{
+  @include centerColumn;
+  @include textCenterColumn;
+  width: 100%;
+
+}
+
+}
+
+
+.img__container {
+  width:45%;
+  height:45%;
+  margin:0 auto;
   padding: 0rem;
 
+  /*Preguntar por qué tengo que centrar con margin 0 auto y no con flex, que no me hace ni caso */
+
   
+}
+
+.adalabers__img {
+  width: 100%;
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
 
 }
 
-/*Revisar si aside-list a y about-us-icons-item a no son repetitivos y puedo eliminar algo*/
+.information__container {
+  @include centerColumn;
+  @include textCenterColumn;
+  width: 85%;
 
-.aside__list a{
 
-  font-size: 100%;
 }
 
-.aboutus__icons--item {
+.adalabers__name{
+ @include adalabersName;
+ text-align: center; 
+}
+
+.adalabers__text{
+  @include text;
+}
+
+.aboutus__icons{
+  margin-bottom: 2.5rem;
+
+  &--list{
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    padding: 0rem;
+
+  }
+
+  &--item{
+
   display: inline-block;
   list-style: none;
   padding-left: 1.5rem;
-   
   
-}
-
-.aboutus__icons--item a {
-  text-decoration: none;
+    
+    & a{
+      text-decoration: none;
+      color: $colorBase;
     }
-
-.fab{
-  color: $colorBase;
-
-  
 }
-
-.fas{
-  color: $colorBase;
-  
-}
-
-.dot{
-  font-size: 3rem;
-  margin: 0 0.2rem 0 0;
-  color: $colorBase;
 }
 
 @media all and (min-width:768px) {
 
+  .adalabers__card:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3.5rem;
+    align-items: flex-end;
+    width: 100%;
+    text-align: left;
+    
+   
+   }
+  
+   .adalabers__card:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    
+   
+   }
 
+  
+   .img__container{
+
+    width: 30%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: auto;
+
+   }
+
+
+   .adalabers__img{
+     width: 100%;
+   }
+
+   .information__container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+   
+  
+   }
+
+   .adalabers__name{
+    margin-left: 0rem;
+    margin-top: 0rem;
+    text-align: left;
+      
+  } 
+ 
   /*
-
-.about-us-container{
-  
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0rem;
-  }
-
-  */
-
- 
-
-.adalabers__item:nth-child(odd){
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 3.5rem;
-  align-items: flex-end;
-  width: 100%;
-  
- 
- }
-
- .adalabers__item:nth-child(even){
-  display: flex;
-  flex-direction: row-reverse;
-  
- 
- }
-
-
-
- .img__container {
-   width: 30%;
-   margin-left: 1.5rem;
-   margin-right: 1.5rem;
-   height: auto;
-   align-self: stretch;
- }
- 
- 
- .information__container{
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
- 
-
- }
-
-
- .adalabers__name{
-   margin-left: 0rem;
-   margin-top: 0rem;
-   text-align: left;
+  .reverse .adalabers-name{
+    margin-right: 3rem;
+   text-align: right;
      
  } 
-
- /*
- .reverse .adalabers-name{
-   margin-right: 3rem;
-  text-align: right;
-    
-} 
-
-
-.reverse .adalaber-text{
-
-  text-align: right;
-  margin-right: 1rem;
-  width: 100%;
-} 
-
-.reverse .about-us-icons{
-  text-align: right;
-}
-*/
-
- .adalaber__container--text{
-   display: flex;
-width: 100%;
-
-
- }
-
  
-  .adalaber__text{
-   text-align: left;
-   margin-left: 0rem;
-   
+ 
+ .reverse .adalaber-text{
+ 
+   text-align: right;
+   margin-right: 1rem;
+   width: 100%;
  } 
-
- .aside__list{
-  padding-inline-start: 0rem;
-  padding-inline-end: 0rem;
-  display: inline-block;
- margin: 0rem;
- text-align: left;
-  
- }
-
- /*
- .reverse .aside-list {
+ 
+ .reverse .about-us-icons{
    text-align: right;
  }
-*/
- .aboutus__icons--item{
-   padding: 0 2rem 0 0;
- }
- /*
- .reverse .about-us-icons-item {
-   padding: 0 0 0 2rem;
-   
+ */
+ 
+
+ 
+ 
   
-}
+ 
+  
+   .adalabers__text{
+    text-align: left;
+    margin-left: 0rem;
+    
+  } 
+ 
+  .aside__list{
+   padding-inline-start: 0rem;
+   padding-inline-end: 0rem;
+   display: inline-block;
+  margin: 0rem;
+  text-align: left;
+   
+  }
+ 
+  /*
+  .reverse .aside-list {
+    text-align: right;
+  }
+ */
+  .aboutus__icons--item{
+    padding: 0 2rem 0 0;
+  }
+  /*
+  .reverse .about-us-icons-item {
+    padding: 0 0 0 2rem;
+    
+   
+ }
+ 
+ */
+ 
+ .aboutus__icons {
+ display: inline;
+   align-self: flex-start;
+   margin:0 0 0 1rem;
+ }
+ 
+ /*
+ .reverse .about-us-icons {
+  align-self: flex-end;
+  margin: 0;
+ }
+ */
 
-*/
 
-.aboutus__icons {
-display: inline;
-  align-self: flex-start;
-  margin:0 0 0 1rem;
-}
-
-/*
-.reverse .about-us-icons {
- align-self: flex-end;
- margin: 0;
-}
-*/
 }
 
 @media all and (min-width:1200px) {
 
-  .aboutus__container{
+  .adalabers{
   
     display: flex;
     flex-direction: row;
@@ -290,7 +234,7 @@ display: inline;
     width: 70%;
     }
   
-  .adalabers__item {
+  .adalabers__card {
 
 width: 100%;
 align-self: center;
