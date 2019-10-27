@@ -1,9 +1,31 @@
-$colorBase: #099d8d;
+
+// about color
+$darkColorBase: #099d8d;
+$lightColorBase: #14d9c4;
+
+// about fonts
+
 $fontTextColor:#54585a;
+$darkTextColor: #000000;  //nombres de adalabers y lema
+$headerFontColor: #ffffff;
+
 $fontFamilyTitle: 'Rubik';
 $fontFamilyText: 'OpenSans';
+
 $fontSizeText: 1rem;
 $fontSizeBigTitle: 1.5rem;
 $fontSizeSmallTitle: 1.375rem;
 $fontSizeAdalabersName: 1.25rem;
+$footerFontSize: 0.875rem;
+
+$mainFontWeight: 500;
+
+$titleTransform: uppercase;    //para poner los títulos en mayúsculas automáticamente
+
+// about margins 
+
+$mainMargin: 0.9375rem;
+// (margen de 15px)
+
+
 

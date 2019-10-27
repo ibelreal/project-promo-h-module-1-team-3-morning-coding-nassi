@@ -1,0 +1,68 @@
+
+@mixin noSpace {
+  margin: 0rem;
+  padding: 0rem;  
+}
+
+@mixin centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin textCenterColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@mixin bigTitle {
+  color: $darkColorBase;
+  font-family: $fontFamilyTitle;
+  font-size: $fontSizeBigTitle;
+  font-weight: $mainFontWeight;
+  text-transform: $titleTransform;
+}
+// consideramos big title los que son como el título "Equipo"
+
+
+@mixin smallTitle {
+  color: $darkColorBase;
+  font-family: $fontFamilyTitle;
+  font-size: $fontSizeSmallTitle;
+  font-weight: $mainFontWeight;
+  text-transform: $titleTransform;
+}
+// consideramos smallTitle los del tipo de "fortalezas.."
+
+@mixin adalabersName{
+  color: $darkTextColor;
+  font-family: $fontFamilyText;
+  font-size: $fontSizeAdalabersName;
+  font-weight: normal;
+}
+
+@mixin headerItem {
+  color: $headerFontColor;
+  font-family: $fontFamilyTitle;
+  font-size: $fontSizeText;
+  font-weight: $mainFontWeight;
+  text-transform: $titleTransform; 
+}
+
+@mixin footerItem {
+  color: $fontTextColor;
+  font-family: $fontFamilyText;
+  font-size:  $footerFontSize;
+  font-weight: $mainFontWeight;
+  text-transform: $titleTransform;
+}
+
+
+@mixin text{
+  color: $fontTextColor;
+  font-family: $fontFamilyText;
+  font-size:  $fontSizeText;
+  font-weight: $mainFontWeight;
+}
+

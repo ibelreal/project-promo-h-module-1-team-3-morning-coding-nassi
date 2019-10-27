@@ -1,6 +1,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap);
 
+@import '../core/variables.scss';
+@import '../core/mixins.scss';
 
 
 .strength-weakness-section{
@@ -27,9 +29,10 @@
 }
 
 .strength-weakness-container{
-  display: flex;
-  flex-direction: column;
-   align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  @include centerColumn;
 }
 
 .strength{
@@ -52,11 +55,12 @@
   /* height: 2.813rem */
   margin:0rem;
   text-align: center;
-  font-family: "Rubik";
-  font-weight: bold;
-  font-size: 1.375rem;
+  // font-family: "Rubik";
+  // font-weight: bold;
+  // font-size: 1.375rem;
+  @include smallTitle;
   line-height: 2.813rem;
-  color: #099d8d;
+  color: $darkColorBase;
 }
 
 .strength-weakness-text{
@@ -82,4 +86,4 @@
     width: 50%;
   }
 }
-/* fin fortalezas y debilidades */
+ /* fin fortalezas y debilidades */
