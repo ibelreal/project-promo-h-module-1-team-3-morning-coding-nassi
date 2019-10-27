@@ -88,13 +88,24 @@ $colorBase: #099d8d;
 
   display: inline-block;
   list-style: none;
-  padding-left: 1.5rem;
+  
   
     
     & a{
       text-decoration: none;
       color: $colorBase;
+      padding: 1rem;
+    
+      &:hover{
+        background-color: $colorBase;
+        color:white;
+      }
     }
+}
+
+.dot {
+  padding: 0;
+  font-size: 2em;
 }
 }
 
@@ -123,7 +134,7 @@ $colorBase: #099d8d;
 
     .aboutus__icons--item{
       padding-left: 0rem;
-      padding-right: 1.5rem;
+      padding-right: 1rem;
     }
 
     
