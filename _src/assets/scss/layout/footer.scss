@@ -1,28 +1,27 @@
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
+
 .footer {
+  border: green 2px solid;
   width: 100vw;
-  background-color: #ffffff;
-  display: block;
-  justify-content: flex-end;
+  background-color: $headerFontColor;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: OpenSans;
-  margin-top: 0;
-  bottom: 0;
+  font-family: $fontFamilyText;
 }
 
 .footer-copy {
-  font-size: 0.875rem;
-  display: block;
-  align-content: center;
-  align-items: center;
-  line-height: 1.25rem;
-  color: #b8b8b9;
+  border: green 2px solid;
+  font-size: $footerFontSize;
+  line-height: $fontSizeAdalabersName;
+  color: $fontFooter;
   text-align: center;
+  margin: 0;
+  padding-top: $footerTop;
 }
 
 .footer-menu {
-  box-sizing: border-box;
-  margin: 0;
   font-size: 0.875rem;
 }
 
@@ -70,6 +69,10 @@
 @media all and (min-width:768px) {
   .footer {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
   }
 
   .footer-copy {
