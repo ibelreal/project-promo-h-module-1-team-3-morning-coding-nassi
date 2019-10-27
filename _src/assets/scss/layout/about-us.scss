@@ -17,6 +17,7 @@ $colorBase: #099d8d;
 
   @include bigTitle;
   @include textCenterColumn;
+  margin-bottom: 2.5rem;
 
 }
 
@@ -32,6 +33,7 @@ $colorBase: #099d8d;
   @include centerColumn;
   @include textCenterColumn;
   width: 100%;
+  margin-bottom: 2.5rem;
 
 }
 
@@ -58,7 +60,6 @@ $colorBase: #099d8d;
 
 .information__container {
   @include centerColumn;
-  @include textCenterColumn;
   width: 85%;
 
 
@@ -99,23 +100,30 @@ $colorBase: #099d8d;
 
 @media all and (min-width:768px) {
 
-  .adalabers__card:nth-child(odd){
+  .adalabers__card:nth-child(even) {
     display: flex;
     flex-direction: row;
-    margin-bottom: 3.5rem;
-    align-items: flex-end;
     width: 100%;
-    text-align: left;
-    
-   
-   }
-  
-   .adalabers__card:nth-child(even){
+
+  }
+
+  .adalabers__card:nth-child(odd) {
     display: flex;
     flex-direction: row-reverse;
-    
-   
-   }
+    width: 100%;
+
+    .adalabers__name{
+      text-align: right;
+    }
+
+    .adalabers__text{
+      text-align: right;
+    }
+
+    .aboutus__icons--item{
+      align-self: right;
+    }
+  }
 
   
    .img__container{
@@ -209,7 +217,7 @@ $colorBase: #099d8d;
  .aboutus__icons {
  display: inline;
    align-self: flex-start;
-   margin:0 0 0 1rem;
+   margin:0rem;
  }
  
  /*
