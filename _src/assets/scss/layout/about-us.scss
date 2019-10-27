@@ -180,7 +180,7 @@ $colorBase: #099d8d;
 
   .aboutus{
     @include centerColumn;
-    
+ 
   }
 
   .adalabers{
@@ -188,9 +188,9 @@ $colorBase: #099d8d;
    width: 100%;
     
   
-  &__card {
+  .adalabers__card {
 
-width: 70%;
+width: 60%;
 align-self: center;
 } 
   }
