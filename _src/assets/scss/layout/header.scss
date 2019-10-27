@@ -9,7 +9,7 @@
   text-transform: $titleTransform;
   background-color: $darkColorBase;
   color: $headerFontColor;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -76,12 +76,13 @@
       padding: 0.9375rem 8.875rem;
     }
 
-    &__list {
-      padding: 0rem 7.9375rem;
+    &__nav{
+      padding: 0;
     }
 
-    &__listItem {
-      padding: 0rem 0.9375rem;
+    &__list {
+      padding: 0 8.875rem;
+      margin: 0;
     }
   }
 }

@@ -2,51 +2,36 @@
 @import "../core/mixins.scss";
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 16px;
+  box-sizing: border-box;
+}
 
-  }
-
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
 
 /* EL CONTAINER */
 .container {
-    /* border: red 1px solid; */
-    margin: 0rem 0.9375rem;
-  }
-  
-  /* EL ANCHOR SE ENCUENTRA SÓLO EN EL HEADER.CSS */
-  .anchor-helper {
-    display: block;
-    position: relative;
-    top: -105px;
-    /* esto es lo que ocupa el menu en mobile */
-    visibility: hidden;
+  margin: 0rem 0.9375rem;
+
+  @media all and (min-width: 768px) {
+    margin: 1.875rem 2.813rem;
   }
 
-  @media all and (min-width:768px) {
+  @media all and (min-width: 1200px) {
+    margin: 0rem 8.688rem;
+  }
+}
 
-    .anchor-helper {
-        top: -60px;
-        /* esto es lo que ocupa el menu en resoluciones distintas a móvil */
-      }
-    
-      /* EL CONTAINER SE ENCUENTRA SÓLO EN EL HEADER.CSS */
-      .container {
-        /* border: red 1px solid; */
-        margin: 0rem 2.813rem;
+/* ANCHOR (ANCLA) */
+.anchor-helper {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -105px; /* esto es lo que ocupa el menu en mobile */
 
-      }
-
-    }
-
-    @media all and (min-width:1200px) {
-
-           /* EL CONTAINER SE ENCUENTRA SÓLO EN EL HEADER.CSS */
-    .container {
-        /* border: red 1px solid; */
-        margin: 0rem 8.688rem;
-      }
-    }
+  @media all and (min-width: 768px) {
+    top: -60px; /* esto es lo que ocupa el menu en resoluciones distintas a móvil */
+  }
+}
