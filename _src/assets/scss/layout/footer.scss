@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   font-family: $fontFamilyText;
+  text-transform: $titleTransform;
 }
 
 .footer-copy {
@@ -22,7 +23,9 @@
 }
 
 .footer-menu {
-  font-size: 0.875rem;
+  border: green 2px solid;
+  font-size: $footerFontSize;
+  font-weight: 600;
 }
 
 .footer-menu-ul {
