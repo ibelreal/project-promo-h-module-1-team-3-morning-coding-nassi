@@ -2,123 +2,112 @@
 @import "../core/mixins.scss";
 
 .footer {
-  border: green 2px solid;
   width: 100vw;
   background-color: $headerFontColor;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: $fontFamilyText;
+  font-family: sans-serif;
   text-transform: $titleTransform;
-}
 
-.footer-copy {
-  border: green 2px solid;
-  font-size: $footerFontSize;
-  line-height: $fontSizeAdalabersName;
-  color: $fontFooter;
-  text-align: center;
-  margin: 0;
-  padding-top: $footerTop;
-}
+  &__copy {
+    font-size: $footerFontSize;
+    line-height: $fontSizeAdalabersName;
+    color: $fontFooter;
+    margin: 0;
+    padding-top: $footerTop;
+  }
 
-.footer-menu {
-  border: green 2px solid;
-  font-size: $footerFontSize;
-  font-weight: 600;
-}
+  &__menu {
+    border: green 2px solid;
+    font-size: $footerFontSize;
+    font-weight: $boldFontWeight;
+    padding-top: $fontSizeAdalabersName;
 
-.footer-menu-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-inline-start: 0px;
-  margin: 0;
-}
+    &__ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-inline-start: 0px;
+      margin: 0;
+    }
 
-.footer-menu-li {
-  box-sizing: border-box;
-  display: inline;
-}
+    &__li {
+      display: inline;
+    }
+  }
 
-.footer-link-about-us,
-.footer-link-team,
-.footer-link-contact {
-  opacity: 0.75;
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.25rem;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
-}
+  &__link__about__us,
+  &__link__team,
+  &__link__contact {
+    opacity: 0.75;
+    font-size: $footerFontSize;
+    line-height: $fontSizeAdalabersName;
+    color: $fontTextColor;
+  }
 
-.footer-logo {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__logo {
+    border: green 2px solid;
+    margin: 0;
+    padding: 30px 0 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .logo-adalab {
   height: 45px;
   width: 115.9px;
-  margin: 30px;
-  font-weight: bold;
-  display: block;
-  text-align: center;
 }
 
 @media all and (min-width:768px) {
   .footer {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
+    border: green 2px solid;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px;
-  }
+    padding: 0 71px;
 
-  .footer-copy {
-    text-align: start;
-    margin: 0;
-    margin-left: 4.313rem;
-  }
+    &__copy {
+      text-align: start;
+    }
 
-  .footer-menu {
-    flex-direction: row-reverse;
-  }
+    &__menu {
+      width: 324px;
+      height: 90px;
+      padding-top: 24px;
 
-  .footer-menu-ul {
-    margin-right: 2.688rem;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin-bottom: 56px;
-  }
+      &__ul {
+        align-items: flex-end;
+      }
+    }
 
-  .footer-logo {
-    position: absolute;
-    transform: translateY(-111px);
-    margin-left: 4.313rem;
-  }
+    &__logo {
+      flex-direction: column;
+      padding: 0px 100px 0px 0;
+      transform: translate(-10px, -40px);
 
-  .logo-adalab {
-    margin: 0;
+      // margin-left: 4.313rem;
+    }
   }
-
 }
 
 @media all and (min-width:1200px) {
-  .footer-copy {
-    padding: 0 230px;
-  }
+  .footer {
+    &__copy {
+      padding: 0 230px;
+    }
 
-  .footer-menu-ul {
-    padding: 0 220px;
-  }
+    &__menu__ul {
+      padding: 0 220px;
+    }
 
-  .footer-logo {
-    justify-content: start;
-    padding: 0 220px;
+    &__logo {
+      justify-content: start;
+      padding: 0 220px;
+    }
   }
 }
 
