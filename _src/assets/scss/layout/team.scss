@@ -1,104 +1,80 @@
-/* html {
-  font-size: 16px;
-} */
+// body {
+//   margin: 0px;
 
-body {
-  margin: 0px;
+// }
 
-}
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik&display=swap");
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik&display=swap");
-
-/* .container { */
-/* border: 3px solid green; */
-/*background: pink;
-
-  margin: 0 0.9375rem;
-  /*0 15px*/
-/* } */
-
-.team-container {
-  /*border: solid black 3px;*/
+@import "../core/variables.scss";
+@import "../core/mixins.scss";
 
 
+.container {
   box-sizing: border-box;
-
-  /* height: 31.5rem;
-  /* 504px*/
-
   display: flex;
   flex-direction: column;
   text-align: center;
   flex-wrap: nowrap;
 }
 
-.team-title {
-  /* border: solid red 2px; */
+.team {
+  &__title {
+    @include smallTitle;
+    margin: 1.875rem 0.9375rem 0rem 0.9375rem;
+    // font-size: 1.5rem;
+    // /*24px*/
+    // font-family: Rubik;
+    // font-weight: 500;
+    // font-stretch: normal;
+    // font-style: normal;
+    // font-weight: bold;
+    // line-height: 1.88;
+    // letter-spacing: normal;
+    // color: #099d8d;
 
-  /*height: 2.813rem;
-  /*45px*/
+    /*30px 15px 0px 15px*/
+  }
+  
+  &__article {
+    @mixin text;
+    text-align: center;
+    margin: 0.9375rem 0.9375rem 1.875rem 0.9375rem;
+    // font-size: 1rem;
+    // /*16px*/
+    // font-weight: normal;
+    // font-family: $fontFamilyText;
+    // font-stretch: normal;
+    // font-style: normal;
+    // line-height: 1.5;
+    // letter-spacing: normal;
+    // color: #54585a;
 
-  font-size: 1.5rem;
-  /*24px*/
-  font-family: Rubik;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1.88;
-  letter-spacing: normal;
-  color: #099d8d;
-
-  margin: 1.875rem 0.9375rem 0rem 0.9375rem;
-  /*30px 15px 0px 15px*/
-}
-
-.team-article {
-  /*border: solid green 2px;*/
-  font-size: 1rem;
-  /*16px*/
-  font-weight: normal;
-  font-family: OpenSans;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #54585a;
-
-  margin: 0.9375rem 0.9375rem 1.875rem 0.9375rem;
-  /*15px 15px 30px 15px*/
-
-
-  text-align: center;
+    /*15px 15px 30px 15px*/
+  }
 }
 
 @media all and (min-width: 768px) {
+  .team {
+    $__title {
+      color: #099d8d;
+      margin-top: 0rem;
+      /*margin-top: 2.813rem*/
+      /*45px*/
 
+    }
 
-
-
- .team-title {
-  color: #099d8d;
-  margin-top: 0rem;
-  /*margin-top: 2.813rem*/
-  /*45px*/
-  
+    &__article {
+      opacity: 0.67;
+    }
+  }
 }
 
-.team-article {
-  opacity: 0.67;
-}
-
-}
 @media all and (min-width: 1200px) {
-  /* .container {
-    margin:0rem;
-  } */
 
-  .team-container {
+  .team {
     margin: 0rem;
     padding: 45px 300px 0px;
 
   }
 
-  }
+}
