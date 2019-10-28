@@ -10,18 +10,15 @@ $colorBase: #099d8d;
   @include centerColumn;
   width: 100%;
   
-
-
-
-&__title {
+  &__title {
 
   @include bigTitle;
   @include textCenterColumn;
   margin-bottom: 2.5rem;
 
 }
-
 }
+
 .adalabers {
   @include centerColumn;
  width: 100%;
@@ -30,10 +27,15 @@ $colorBase: #099d8d;
 
 
 &__card{
-  @include centerColumn;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   @include textCenterColumn;
   width: 100%;
   margin-bottom: 2.5rem;
+  
 
 }
 
@@ -94,7 +96,7 @@ $colorBase: #099d8d;
     & a{
       text-decoration: none;
       color: $colorBase;
-      padding: 1rem;
+      padding: 1rem 0 0 0;
     
       &:hover{
         background-color: $colorBase;
@@ -104,17 +106,26 @@ $colorBase: #099d8d;
 }
 
 .dot {
-  padding: 0;
-  font-size: 2em;
+  height: 3px;
+  width: 3px;
+  background-color: $colorBase;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  padding: 0rem;
 }
 }
+
 
 @media all and (min-width:768px) {
 
-  .adalabers__card:nth-child(even) {
+  .adalabers__card {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: stretch;
     width: 100%;
     text-align: left;
     
@@ -134,13 +145,13 @@ $colorBase: #099d8d;
 
     .aboutus__icons--item{
       padding-left: 0rem;
-      padding-right: 1rem;
+      padding-right: 0rem;
     }
 
     
   }
 
-  .adalabers__card:nth-child(odd) {
+  .adalabers__card:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
@@ -156,6 +167,11 @@ $colorBase: #099d8d;
 
     .aboutus__icons--list{
       text-align: right;
+    }
+
+    .aboutus__icons--item{
+      padding-left: 0rem;
+      padding-right: 0rem;
     }
   }
 
