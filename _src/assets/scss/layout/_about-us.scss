@@ -65,6 +65,7 @@ $colorBase: #099d8d;
   &__name{
     @include adalabersName;
     text-align: center; 
+    
    }
 
    &__text{
@@ -95,6 +96,7 @@ $colorBase: #099d8d;
       text-decoration: none;
       color: $colorBase;
       padding: 1rem 0 0 0;
+      
     
       &:hover{
         background-color: $colorBase;
@@ -138,6 +140,7 @@ $colorBase: #099d8d;
 
       &__name{
       text-align: left;
+      margin-top: 0rem;
       }
     
       &__text{
@@ -167,6 +170,7 @@ $colorBase: #099d8d;
 
       &__name{
       text-align: right;
+      margin-top: 0rem;
       }
     
       &__text{
@@ -192,14 +196,6 @@ $colorBase: #099d8d;
 
   }
 
-   .information__container{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-   
-  
-   }
 
 
 

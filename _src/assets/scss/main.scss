@@ -1,13 +1,17 @@
-@import 'core/variables.scss';
-@import 'core/mixins.scss';
-@import 'core/normalize.scss';
-@import 'layout/commons.scss';
-@import 'layout/header.scss';
-@import 'layout/hero.scss';
-@import 'layout/team.scss';
-@import 'layout/strength.scss';
-@import 'layout/about-us.scss';
-@import 'components/icons.scss';
-@import 'layout/footer.scss';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/normalize';
+@import 'layout/commons';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/team';
+@import 'layout/strength';
+@import 'layout/about-us';
+@import 'components/icons';
+@import 'layout/footer';
+
+
+
+@import 'pages/contact'
 
 
