@@ -2,7 +2,8 @@
 @import "../core/mixins.scss";
 
 .footer {
-  width: 100vw;
+  // border: green 2px solid;
+  // width: 100vw;
   background-color: $headerFontColor;
   display: flex;
   flex-direction: column;
@@ -10,26 +11,38 @@
   font-family: sans-serif;
   text-transform: $titleTransform;
 
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 40px 40px 40px;
+
   &__copy {
     font-size: $footerFontSize;
     line-height: $fontSizeAdalabersName;
     color: $fontFooter;
     margin: 0;
     padding-top: $footerTop;
+
+          background: deeppink;
   }
 
   &__menu {
-    border: green 2px solid;
     font-size: $footerFontSize;
     font-weight: $boldFontWeight;
     padding-top: $fontSizeAdalabersName;
 
+
+        background: deeppink; 
+
     &__ul {
+      border: brown 3px solid;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-inline-start: 0px;
       margin: 0;
+
+        background: deeppink; 
+
     }
 
     &__li {
@@ -53,6 +66,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: deeppink; 
+
   }
 }
 
