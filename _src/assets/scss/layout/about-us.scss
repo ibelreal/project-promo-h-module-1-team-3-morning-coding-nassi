@@ -17,14 +17,13 @@ $colorBase: #099d8d;
   margin-bottom: 2.5rem;
 
 }
+
 }
 
 .adalabers {
   @include centerColumn;
- width: 100%;
+  width: 100%;
   
-
-
 
 &__card{
   display: flex;
@@ -36,13 +35,11 @@ $colorBase: #099d8d;
   width: 100%;
   margin-bottom: 2.5rem;
   
-
 }
 
 }
 
-
-.img__container {
+.imgContainer{
   width:45%;
   height:45%;
   margin:0 auto;
@@ -50,43 +47,44 @@ $colorBase: #099d8d;
 
   /*Preguntar por qué tengo que centrar con margin 0 auto y no con flex, que no me hace ni caso */
 
+  &__photo {
+    width: 100%;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+  
+  }
   
 }
 
-.adalabers__img {
-  width: 100%;
-  border-radius: 4px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
 
-}
 
-.information__container {
+.infoAdalaber {
   @include centerColumn;
   width: 85%;
 
+  &__name{
+    @include adalabersName;
+    text-align: center; 
+   }
+
+   &__text{
+    @include text;
+  }
 
 }
 
-.adalabers__name{
- @include adalabersName;
- text-align: center; 
-}
 
-.adalabers__text{
-  @include text;
-}
-
-.aboutus__icons{
+.socialMedia{
   margin-bottom: 2.5rem;
 
-  &--list{
+  &__list{
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     padding: 0rem;
 
   }
 
-  &--item{
+  &__list__icon{
 
   display: inline-block;
   list-style: none;
@@ -127,68 +125,64 @@ $colorBase: #099d8d;
     justify-content: flex-start;
     align-items: stretch;
     width: 100%;
-    text-align: left;
     
 
-    .adalabers__name{
+  
+    .infoAdalaber {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__name{
       text-align: left;
-    }
-
-    .adalabers-text{
-      text-align: left;
-    }
-
-    .aboutus__icons--list{
-      text-align: left;
-      
-    }
-
-    .aboutus__icons--item{
-      padding-left: 0rem;
-      padding-right: 0rem;
-    }
-
+      }
     
+      &__text{
+      text-align: left;
+      }
+    }
+  
   }
 
+    
   .adalabers__card:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     width: 100%;
+    
+
+    .infoAdalaber {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      &__name{
+      text-align: right;
+      }
+    
+      &__text{
+      text-align: right;
+      }
+    }
   
-  
-    .adalabers__name{
-      text-align: right;
-    }
-
-    .adalabers__text{
-      text-align: right;
-    }
-
-    .aboutus__icons--list{
-      text-align: right;
-    }
-
-    .aboutus__icons--item{
-      padding-left: 0rem;
-      padding-right: 0rem;
-    }
   }
-
   
-   .img__container{
+ 
+  
+   .imgContainer{
 
     width: 30%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     height: auto;
 
-   }
-
-
-   .adalabers__img{
+   
+   &__photo{
      width: 100%;
    }
+
+  }
 
    .information__container{
     width: 70%;
@@ -215,11 +209,16 @@ $colorBase: #099d8d;
    width: 100%;
     
   
-  .adalabers__card {
+  &__card {
 
 width: 60%;
 align-self: center;
 } 
-  }
+  
 
+  &__card:nth-child(even){
+  width: 60%;
+  align-self: center;
+}
+  }
 }
