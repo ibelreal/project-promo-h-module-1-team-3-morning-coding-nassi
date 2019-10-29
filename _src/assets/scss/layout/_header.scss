@@ -3,10 +3,7 @@
 
 .header {
   @include textCenterColumn;
-  font-family: $fontFamilyTitle;
-  font-size: $fontSizeBigTitle;
-  font-weight: $mainFontWeight;
-  text-transform: $titleTransform;
+  @include headerItem;
   background-color: $darkColorBase;
   color: $headerFontColor;
   width: 100vw;
@@ -15,49 +12,51 @@
   left: 0px;
   z-index: 2;
   opacity: 0.9;
-  
+
   &__title {
     font-size: $fontSizeText;
     margin: 0rem;
     padding: 0.9375rem 0rem;
     line-height: 1.88;
-    
-
-    
   }
-  
+
+  &__title:hover {
+    span {
+      transform: rotate(-90deg);
+      display: inline-block;
+      transition: 1s ease-in-out;
+    }
+  }
+
   &__nav {
     background-color: $lightColorBase;
     font-size: 0.9375rem;
-    
   }
-  
+
   &__list {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0.5rem 0rem;
     margin-block-start: 0.5rem;
     margin-block-end: 0.5rem;
     padding-inline-start: 0;
     height: 1.813rem;
   }
-  
+
   &__listItem {
     display: inline;
   }
-  
+
   &__link {
     color: $headerFontColor;
   }
-  
+
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 
     &__title {
       padding: 0.9375rem 2.8125rem;
@@ -74,18 +73,16 @@
   }
 
   @media all and (min-width: 1200px) {
+    &__nav {
+      padding: 0;
+    }
 
     &__title {
       padding: 0.9375rem 8.875rem;
     }
 
-    &__nav{
-      padding: 0;
-    }
-
     &__list {
       padding: 0 8.875rem;
-      margin: 0;
     }
   }
 }
