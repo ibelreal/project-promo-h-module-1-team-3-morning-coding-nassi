@@ -5,85 +5,135 @@
 @import '../core/mixins.scss';
 
 
-.strength-weakness-section{
+.strengthWeaknessSection{
   background-color: rgba(184, 184, 185,0.2);
   /* height: 36.19rem; */
   margin-bottom: 0.9375rem;
-  padding: 0.9375rem 0rem 0.9375rem 0rem;
-  box-sizing: content-box;
+  // padding: 0.9375rem 0rem 0.9375rem 0rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap; 
   justify-content: space-around;
-}
 
-.diamond{
+
+
+ .diamond{
   width: 1.875rem;
   height: 1.875rem;
   background: #ffffff;
   transform: rotate(45deg);
   justify-self: center;
   position: relative;
-  bottom: 1.875rem;
-  left: 48%;
+  bottom: 0.875rem;
+  // left: 48%;
+  }
 }
 
-.strength-weakness-container{
-  // display: flex;
+.swContainer{
+  //  display: flex;
   // flex-direction: column;
-  // align-items: center;
+  //  align-items: center;
   @include centerColumn;
-}
+    // @media all and (min-width:768px) {
+    //   flex-direction: row; 
+    //   justify-content: space-between;
+    //   margin: 1.875rem;
+    // }  
 
-.strength{
-  margin: 0px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+  &__sw{
+    // border: blue solid 2px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem;
+     
+      // @media all and (min-width:768px){
+      // width: 50%;
+      // }
+      // @media all and (min-width:1200px){
+      //   padding: 1.375rem;
+      // }
 
-.weakness{
-  margin: 0px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+      // .weakness{
+      //   margin: 0px;
+      //   width: 100%;
+      //   display: flex;
+      //   flex-direction: column;
+      // } 
+
+
+    &__title{
+        box-sizing: border-box;
+        /* height: 2.813rem */
+        margin:0rem;
+        text-align: center;
+        // font-family: "Rubik";
+        // font-weight: bold;
+        // font-size: 1.375rem;
+        @include smallTitle;
+        line-height: 2.813rem;
+        // color: $darkColorBase;
+    }
+
+    &__text{
+        // margin-inline-start: 0.9375rem;
+        // margin-inline-end: 0.9375rem;      
+        display: flex;
+        text-align: center;
+        @include text;
+        // font-family: "Open Sans";
+        // font-weight: normal;
+        // font-size: 1rem;
+        line-height: 1.5rem;
+        // color: #54585a ; 
+    }
+    
+  }
+
 } 
 
 
-.strength-weakness-title{
-  box-sizing: border-box;
-  /* height: 2.813rem */
-  margin:0rem;
-  text-align: center;
-  // font-family: "Rubik";
-  // font-weight: bold;
-  // font-size: 1.375rem;
-  @include smallTitle;
-  line-height: 2.813rem;
-  color: $darkColorBase;
-}
 
-.strength-weakness-text{
-  margin-inline-start: 0.9375rem;
-  margin-inline-end: 0.9375rem;
-  
-  display: flex;
-  text-align: center;
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #54585a ; 
-}
 
 @media all and (min-width:768px) {
- .strength-weakness-container{
-   flex-direction: row; 
-   justify-content: space-between;  
-  }
-
-  .weakness, .strength{
-    width: 50%;
+  .swContainer{
+    // border: black solid 3px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin: 1.875rem;
+    &__sw{
+      width: 50%;
+      // background: red;
+    }
   }
 }
+
+@media all and (min-width:1200px){
+  .swContainer__sw{
+    display: flex;
+    flex-direction: column;
+    padding: 1.375rem;
+  }
+   
+}
+
+  // @media all and (min-width:768px){
+  //   width: 50%;
+  // }
+
+ 
+
+
+
+  // .weakness, .strength{
+  //   width: 50%;
+  //   padding: 1.875rem;
+  // }
+// }
+
+
+
  /* fin fortalezas y debilidades */
