@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <!--Aquí van las referencias de CSS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Aquí tienen que ir el resto de links del header, footer, etc-->
+      
+        <!--Esto son las fuentes disponibles en toda la web-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap" rel="stylesheet">
+      
+        <link rel="stylesheet" type="text/css" href="./assets/css/pages/contact.css">
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+      
+        <script src="https://kit.fontawesome.com/61294e7035.js" crossorigin="anonymous">
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacta con nosotros</title>
+      </head>
+  
+
+<body>
+  <main>
+      <partial src="_header.html"></partial>
+
+      <section class="hero">
+          <div class="hero__containerImage">
+            <img
+              class="hero__image"
+              src="./assets/images/team-coding-nassi.jpg"
+              alt="coding nassi-photo"
+              title="coding nassi"
+            />
+          </div>
+          
+        </section>
+
+    <section class="formContainer container">
+        <h2 class="formContainer__title">contacto</h2>
+        <p class="formContainer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid obcaecati nemo
+          laborum beatae modi repellendus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid obcaecati nemo
+          laborum beatae modi repellendus. </p>
+        <p class="formContainer__text--small">Todos los campos marcados con
+          <span class="asterisk">*</span>
+          son obligatorios.</p>
+        <section class="form">
+        <form action="/signup" method="POST">
+             <label class="form__label" for="name">Nombre completo
+              <span class="asterisk">*</span>
+            </label>
+            <input class="form__input" class="form__input" placeholder="Nombre" name="name" type="text" id="name" pattern="[A-Za-z ]+" required>
+          
+            <label class="form__label" for="email__address">email
+              <span class="asterisk">*</span>
+            </label>
+            <input class="form__input" placeholder=" nombre.apellido@mail.com" name="email" type="email" id="email__address"
+              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                  
+            <label class="form__label" for="phone__number">Teléfono</label>
+            <input class="form__input" placeholder="Ej:123456789" name="phone" type="number" id="phone__number" pattern="([+])+[0-9]{9-11}">
+           
+            <label class="form__label" for="message">Mensaje
+              <span class="asterisk">*</span>
+            </label>
+            <textarea class="form__textarea" placeholder="¿Qué necesitas?" name="message" id="message" type="text" required>
+
+            </textarea>
+        
+          <input class="form__button" type="submit" value="enviar">
+        </form>
+
+      </section>
+    </section>
+  </main>
+  <partial src="_footer.html"></partial>
+</body>
+
+</html>
