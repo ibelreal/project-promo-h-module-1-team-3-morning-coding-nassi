@@ -1,14 +1,9 @@
 @import "../core/variables.scss";
 @import "../core/mixins.scss";
 
-.logo-adalab {
-  height: 45px;
-  width: 115.9px;
-}
-
 .footer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   border-top: $darkColorBase 0.5px solid;
   @include footerItem;
   text-align: center;
@@ -39,8 +34,7 @@
 
   @media all and (min-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: auto auto;
     padding: 1.875rem 2.813rem 3.75rem;
 
     &__copy {
@@ -48,32 +42,28 @@
       padding: 0;
     }
 
+    &__menu {
+      grid-area: 1 / 2 / 3 / 2; // As the short-shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end:
+    }
+
     &__list {
       display: flex;
       align-items: flex-end;
       padding: 0;
-      grid-row: span 2;
     }
+
     &__logo {
       text-align: start;
       padding: 0;
     }
+
+    @media all and (min-width: 1200px) {
+      padding: 1.875rem 8.625rem 3.188rem;
+    }
   }
 }
 
-@media all and (min-width: 1200px) {
-  .footer {
-    &__copy {
-      padding: 0 230px;
-    }
-
-    &__menu__ul {
-      padding: 0 220px;
-    }
-
-    &__logo {
-      justify-content: start;
-      padding: 0 220px;
-    }
-  }
+.logo-adalab {
+  height: 45px;
+  width: 115.9px;
 }

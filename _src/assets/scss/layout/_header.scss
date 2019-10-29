@@ -73,6 +73,10 @@
   }
 
   @media all and (min-width: 1200px) {
+    &__nav {
+      padding: 0;
+    }
+
     &__title {
       padding: 0.9375rem 8.875rem;
     }
