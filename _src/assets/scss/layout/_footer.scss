@@ -2,44 +2,40 @@
 @import "../core/mixins.scss";
 
 .footer {
-  width: 100vw;
   background-color: $headerFontColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: sans-serif;
+  @include textCenterColumn;
+  font-family: $fontFamilyTitle;
   text-transform: $titleTransform;
+  font-weight: $mainFontWeight;
 
   &__copy {
+    border: red 1px solid;
     font-size: $footerFontSize;
     line-height: $fontSizeAdalabersName;
     color: $fontFooter;
-    margin: 0;
-    padding-top: $footerTop;
+    // padding-top: $footerTop;
   }
 
   &__menu {
     border: green 2px solid;
     font-size: $footerFontSize;
     font-weight: $boldFontWeight;
-    padding-top: $fontSizeAdalabersName;
-
-    &__ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-inline-start: 0px;
-      margin: 0;
-    }
-
-    &__li {
-      display: inline;
-    }
+    // padding-top: $fontSizeAdalabersName;
   }
 
-  &__link__about__us,
-  &__link__team,
-  &__link__contact {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
+    // margin: 0;
+  }
+
+  &__listItem {
+    display: inline;
+  }
+
+  &__link {
     opacity: 0.75;
     font-size: $footerFontSize;
     line-height: $fontSizeAdalabersName;
@@ -48,7 +44,7 @@
 
   &__logo {
     border: green 2px solid;
-    margin: 0;
+    // margin: 0;
     padding: 30px 0 45px 0;
     display: flex;
     justify-content: center;
@@ -61,7 +57,7 @@
   width: 115.9px;
 }
 
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .footer {
     margin: 0;
     border: green 2px solid;
@@ -88,13 +84,11 @@
       flex-direction: column;
       padding: 0px 100px 0px 0;
       transform: translate(-10px, -40px);
-
-      // margin-left: 4.313rem;
     }
   }
 }
 
-@media all and (min-width:1200px) {
+@media all and (min-width: 1200px) {
   .footer {
     &__copy {
       padding: 0 230px;
@@ -109,20 +103,4 @@
       padding: 0 220px;
     }
   }
-}
-
-a:link {
-  text-decoration: none
-}
-
-a:visited {
-  text-decoration: none
-}
-
-a:hover {
-  text-decoration: none
-}
-
-a:active {
-  text-decoration: none
 }

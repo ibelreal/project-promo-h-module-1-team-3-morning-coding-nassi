@@ -15,23 +15,19 @@
   left: 0px;
   z-index: 2;
   opacity: 0.9;
-  
+
   &__title {
     font-size: $fontSizeText;
     margin: 0rem;
     padding: 0.9375rem 0rem;
     line-height: 1.88;
-    
-
-    
   }
-  
+
   &__nav {
     background-color: $lightColorBase;
     font-size: 0.9375rem;
-    
   }
-  
+
   &__list {
     display: flex;
     justify-content: space-evenly;
@@ -43,21 +39,20 @@
     padding-inline-start: 0;
     height: 1.813rem;
   }
-  
+
   &__listItem {
     display: inline;
   }
-  
+
   &__link {
     color: $headerFontColor;
   }
-  
+
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 
     &__title {
       padding: 0.9375rem 2.8125rem;
@@ -74,12 +69,11 @@
   }
 
   @media all and (min-width: 1200px) {
-
     &__title {
       padding: 0.9375rem 8.875rem;
     }
 
-    &__nav{
+    &__nav {
       padding: 0;
     }
 
