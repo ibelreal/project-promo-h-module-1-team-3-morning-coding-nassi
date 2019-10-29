@@ -31,7 +31,7 @@ html {
 
 /* EL CONTAINER */
 .container {
-  margin: 0rem 0.9375rem;
+  margin: 0rem $mainMargin;
 
   @media all and (min-width: 768px) {
     margin: 1.875rem 2.813rem;
@@ -42,7 +42,7 @@ html {
   }
 }
 
-/* ANCHOR (ANCLA) */
+/* ANCLA */
 .anchor-helper {
   display: block;
   position: relative;

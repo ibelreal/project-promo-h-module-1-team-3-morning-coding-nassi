@@ -1,34 +1,28 @@
 @import "../core/variables.scss";
 @import "../core/mixins.scss";
 
+.logo-adalab {
+  height: 45px;
+  width: 115.9px;
+}
+
 .footer {
-  background-color: $headerFontColor;
-  @include textCenterColumn;
-  font-family: $fontFamilyTitle;
-  text-transform: $titleTransform;
-  font-weight: $mainFontWeight;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: $darkColorBase 0.5px solid;
+  @include footerItem;
+  text-align: center;
 
   &__copy {
-    border: red 1px solid;
     font-size: $footerFontSize;
-    line-height: $fontSizeAdalabersName;
     color: $fontFooter;
-    // padding-top: $footerTop;
-  }
-
-  &__menu {
-    border: green 2px solid;
-    font-size: $footerFontSize;
-    font-weight: $boldFontWeight;
-    // padding-top: $fontSizeAdalabersName;
+    padding-top: 1.875rem;
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include textCenterColumn;
     padding-inline-start: 0px;
-    // margin: 0;
+    padding: 1.25rem 0 1.875rem 0;
   }
 
   &__listItem {
@@ -36,54 +30,33 @@
   }
 
   &__link {
-    opacity: 0.75;
-    font-size: $footerFontSize;
-    line-height: $fontSizeAdalabersName;
     color: $fontTextColor;
   }
 
   &__logo {
-    border: green 2px solid;
-    // margin: 0;
-    padding: 30px 0 45px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 0 2.813rem 0;
   }
-}
 
-.logo-adalab {
-  height: 45px;
-  width: 115.9px;
-}
-
-@media all and (min-width: 768px) {
-  .footer {
-    margin: 0;
-    border: green 2px solid;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 71px;
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 1.875rem 2.813rem 3.75rem;
 
     &__copy {
       text-align: start;
+      padding: 0;
     }
 
-    &__menu {
-      width: 324px;
-      height: 90px;
-      padding-top: 24px;
-
-      &__ul {
-        align-items: flex-end;
-      }
+    &__list {
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+      grid-row: span 2;
     }
-
     &__logo {
-      flex-direction: column;
-      padding: 0px 100px 0px 0;
-      transform: translate(-10px, -40px);
+      text-align: start;
+      padding: 0;
     }
   }
 }
