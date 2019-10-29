@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <!--Aquí van las referencias de CSS-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Aquí tienen que ir el resto de links del header, footer, etc-->
 
-    <!--Esto son las fuentes disponibles en toda la web-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <!--Aquí van las referencias de CSS-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--Aquí tienen que ir el resto de links del header, footer, etc-->
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+  <!--Esto son las fuentes disponibles en toda la web-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap" rel="stylesheet" />
 
-    <script src="https://kit.fontawesome.com/61294e7035.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CODING NASSI</title>
-  </head>
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
 
-  <!-- /* EL CONTAINER SE ENCUENTRA SOLO EN EL HEADER.CSS */ -->
+  <script src="https://kit.fontawesome.com/61294e7035.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CODING NASSI</title>
+</head>
 
-  <body>
-    <partial src="_header.html"></partial>
-    <main>
-      <section class="hero">
-        <div class="hero__containerImage">
-          <img class="hero__image" src="./assets/images/team-coding-nassi.jpg" alt="coding nassi-photo" title="coding nassi" />
-        </div>
-        <p class="hero__title">
-          "Sabemos lo que somos, pero no sabemos lo que podemos ser." William Shakespeare
-        </p>
-      </section>
+<!-- /* EL CONTAINER SE ENCUENTRA SOLO EN EL HEADER.CSS */ -->
 
-      <!--empieza el html de Noe-->
-      <section class="team-container">
-        <div class="container">
-          <a class="anchor-helper" id="team"></a>
-          <h2 class="team-title">EQUIPO</h2>
-          <div class="team-article">
-            <p>
-              Somos NASSI, un grupo de mujeres que ha decidido cambiar de vida y dar el salto al mundo tecnológico de la mano de Adalab y de la programación Front-End. Provenimos de ámbitos profesionales muy diversos que nos han proporcionado diferentes conocimientos que, puestos en común, aportan valor añadido a cualquier proyecto que vayamos a desarrollar.
-            </p>
-            <p>
-              ¡Ya hemos dado el primer paso para formarnos como programadoras Front-End! Pero, ¿quién sabe hasta dónde podemos llegar en esta nueva aventura?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- aquí empieza la sección de Fortalezas y debilidades -->
-
-      <section class="strengthWeaknessSection">
-        <!-- <link rel="stylesheet" href="./styles/styles-strenght-weakness.css"> -->
-        <div class="diamond">
-          <!-- div sin texto, sólo para hacer el dibujo del rombo -->
-        </div>
-        <div class="swContainer container">
-          <article class="swContainer__sw">
-            <h3 class="swContainer__sw__title">Fortalezas</h3>
-            <p class="swContainer__sw__text">
-              Somos un equipo integrado por cinco mujeres provenientes de diferentes profesiones, con un bagaje en nuestras respectivas áreas que nos ha permitido adquirir destrezas muy diversas. Como equipo, estos conocimientos previos nos permiten aportar diferentes visiones y complementarnos las unas a las otras.
-            </p>
-          </article>
-          <article class="swContainer__sw">
-            <h3 class="swContainer__sw__title">Debilidades</h3>
-            <p class="swContainer__sw__text">
-              Esta es nuestra primera experiencia en el mundo de la programación, al que llegamos cargadas de ilusión. Quizá nuestra falta de experiencia pueda verse como debilidad, pero es algo transitorio: ¡estamos decididas a aprender el máximo y a aportar todo nuestro valor al equipo en el que nos integremos!
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- fin fortalezas y debilidades -->
-
-      <!--empieza html sara-->
-      <div class="container">
-        <section class="aboutus">
-          <a class="anchor-helper" id="about-us"></a>
-
-          <h2 class="aboutus__title">
-            quiénes somos
-          </h2>
-
-          <section class="adalabers">
-            <!--Noelia-->
-            <partial src="_about-us.html" img="./assets/images/noe.jpg" title-img="Noelia Luque" alt-about-us="Primer plano de la adalaber Noelia Luque" name=" Noelia Luque" desc="Hasta hace poco aplicaba en mi vida eso de que más vale lo malo conocido que lo bueno por conocer. Decidí darle un giro a mi vida profesional y me presentaron el mundo de la programación. Vengo del sector de la estética personal, maestra en el arte de pasar por chapa y pintura a las personas, por lo que creo que se me dará bien encargarme del Front-End." twitter="https://twitter.com/NoeliaL62827037" email="mailto:n.luque91@gmail.com" github="https://github.com/nluque91" linkedin="https://www.linkedin.com/in/noelia-luque-54157a196/"></partial>
-            <!--Ana-->
-            <partial src="_about-us.html" img="./assets/images/ana.jpg" title-img="Ana Payán" alt-about-us="Primer plano de Ana Payán" name="Ana Payán" desc="Soy arquitecta y, por lo tanto, me gusta construir, ver las estructuras de las cosas y entenderlas. Creo que en Adalab hay muchas por descubrir y cada día es un reto para seguir conociéndolas y, con los conocimientos asentados, construir miles de estructuras posibles. Si necesitas una arquitecta Front-End, ya sabes dónde estamos." twitter="https://twitter.com/nuskapi" email="mailto: anapayan22@gmail.com" github="https://github.com/anapayanruiz" linkedin="https://www.linkedin.com/in/ana-p-567086109/"></partial>
-            <!--Sandra-->
-            <partial src="_about-us.html" img="./assets/images/sandra.jpg" title-img="Sandra Romero" alt-about-us="Primer plano de Sandra Romero" name="Sandra Romero" desc="Soy nueva en esto de la programación, pero eso sólo hace que tenga más ganas de aprender y seguir conociendo este mundo. Antes de entrar en Adalab estudié Biología y estuve trabajando en un laboratorio, así que estoy acostumbrada a que los resultados esperados no salgan a la primera, ni a la segunda... pero sé que analizando errores y aciertos se llega a la respuesta." twitter="https://twitter.com/sandra9ro" email="mailto:romeroortiz.sandra@gmail.com" github="https://github.com/sandra9ro" linkedin="https://www.linkedin.com/in/sandra-ro"></partial>
-            <!--Sara-->
-            <partial src="_about-us.html" img="./assets/images/sara.jpg" title-img="Sara Rojas" alt-about-us="Primer plano de Sara Rojas" name="Sara Rojas" desc="Antes escribía noticias y reportajes, ahora líneas de código. Por eso, estoy acostumbrada a trabajar bajo presión, a buscar (y rebuscar) información donde haga falta y a hacer preguntas para entender bien las cosas. Tengo muchas ganas de seguir explorando el mundo IT, ¿me ayudas a descubrirlo?" twitter="https://twitter.com/srojasz87" email="mailto:srojasz@gmail.com" github="https:/ github.com/srojasz" linkedin="https://es.linkedin.com/in/sararojas"></partial>
-            <!--Isa-->
-            <partial src="_about-us.html" title-img="Isabel del Real" alt-about-us="Primer plano de Isabel del Real" name="Isabel del Real" img="./assets/images/isa.jpg" desc="Ingeniera informática y matemática en proceso, que busca coger más experiencia y soltura en la programación. He trabajado como back-end anteriormente y, gracias a Adalab, voy a aprender front-end. Me gusta aprender nuevos lenguajes. Ilusionada por descubrir qué esconde este mundillo y hacer grandes amistades en él." twitter="https://twitter.com/ibeldelr" email="mailto:i.beldelreal@gmail.com" github="https://github.com/ibelreal" linkedin="https://www.linkedin.com/in/ibeldelrealaraujo"></partial>
-          </section>
-        </section>
+<body>
+  <partial src="_header.html"></partial>
+  <main>
+    <section class="hero">
+      <div class="hero__containerImage">
+        <img class="hero__image" src="./assets/images/team-coding-nassi.jpg" alt="coding nassi-photo"
+          title="coding nassi" />
       </div>
-    </main>
-    <partial src="_footer.html"></partial>
-  </body>
+      <p class="hero__title">
+        "Sabemos lo que somos, pero no sabemos lo que podemos ser." William Shakespeare
+      </p>
+    </section>
+
+    <!--empieza el html de Noe-->
+    <section class="team">
+      <div class="container">
+        <a class="anchor-helper" id="team"></a>
+        <h2 class="team__title">EQUIPO</h2>
+        <div class="team__article">
+          <p>
+            Somos NASSI, un grupo de mujeres que ha decidido cambiar de vida y dar el salto al mundo tecnológico de la
+            mano de Adalab y de la programación Front-End. Provenimos de ámbitos profesionales muy diversos que nos han
+            proporcionado diferentes conocimientos que, puestos en común, aportan valor añadido a cualquier proyecto que
+            vayamos a desarrollar.
+          </p>
+          <p>
+            ¡Ya hemos dado el primer paso para formarnos como programadoras Front-End! Pero, ¿quién sabe hasta dónde
+            podemos llegar en esta nueva aventura?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- aquí empieza la sección de Fortalezas y debilidades -->
+
+    <section class="strengthWeaknessSection">
+      <!-- <link rel="stylesheet" href="./styles/styles-strenght-weakness.css"> -->
+      <div class="diamond">
+        <!-- div sin texto, sólo para hacer el dibujo del rombo -->
+      </div>
+      <div class="swContainer container">
+        <article class="swContainer__sw">
+          <h3 class="swContainer__sw__title">Fortalezas</h3>
+          <p class="swContainer__sw__text">
+            Somos un equipo integrado por cinco mujeres provenientes de diferentes profesiones, con un bagaje en
+            nuestras respectivas áreas que nos ha permitido adquirir destrezas muy diversas. Como equipo, estos
+            conocimientos previos nos permiten aportar diferentes visiones y complementarnos las unas a las otras.
+          </p>
+        </article>
+        <article class="swContainer__sw">
+          <h3 class="swContainer__sw__title">Debilidades</h3>
+          <p class="swContainer__sw__text">
+            Esta es nuestra primera experiencia en el mundo de la programación, al que llegamos cargadas de ilusión.
+            Quizá nuestra falta de experiencia pueda verse como debilidad, pero es algo transitorio: ¡estamos decididas
+            a aprender el máximo y a aportar todo nuestro valor al equipo en el que nos integremos!
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- fin fortalezas y debilidades -->
+
+    <!--empieza html sara-->
+    <div class="container">
+      <section class="aboutus">
+        <a class="anchor-helper" id="about-us"></a>
+
+        <h2 class="aboutus__title">
+          quiénes somos
+        </h2>
+
+        <section class="adalabers">
+          <!--Noelia-->
+          <partial src="_about-us.html" img="./assets/images/noe.jpg" title-img="Noelia Luque"
+            alt-about-us="Primer plano de la adalaber Noelia Luque" name=" Noelia Luque"
+            desc="Hasta hace poco aplicaba en mi vida eso de que más vale lo malo conocido que lo bueno por conocer. Decidí darle un giro a mi vida profesional y me presentaron el mundo de la programación. Vengo del sector de la estética personal, maestra en el arte de pasar por chapa y pintura a las personas, por lo que creo que se me dará bien encargarme del Front-End."
+            twitter="https://twitter.com/NoeliaL62827037" email="mailto:n.luque91@gmail.com"
+            github="https://github.com/nluque91" linkedin="https://www.linkedin.com/in/noelia-luque-54157a196/">
+          </partial>
+          <!--Ana-->
+          <partial src="_about-us.html" img="./assets/images/ana.jpg" title-img="Ana Payán"
+            alt-about-us="Primer plano de Ana Payán" name="Ana Payán"
+            desc="Soy arquitecta y, por lo tanto, me gusta construir, ver las estructuras de las cosas y entenderlas. Creo que en Adalab hay muchas por descubrir y cada día es un reto para seguir conociéndolas y, con los conocimientos asentados, construir miles de estructuras posibles. Si necesitas una arquitecta Front-End, ya sabes dónde estamos."
+            twitter="https://twitter.com/nuskapi" email="mailto: anapayan22@gmail.com"
+            github="https://github.com/anapayanruiz" linkedin="https://www.linkedin.com/in/ana-p-567086109/"></partial>
+          <!--Sandra-->
+          <partial src="_about-us.html" img="./assets/images/sandra.jpg" title-img="Sandra Romero"
+            alt-about-us="Primer plano de Sandra Romero" name="Sandra Romero"
+            desc="Soy nueva en esto de la programación, pero eso sólo hace que tenga más ganas de aprender y seguir conociendo este mundo. Antes de entrar en Adalab estudié Biología y estuve trabajando en un laboratorio, así que estoy acostumbrada a que los resultados esperados no salgan a la primera, ni a la segunda... pero sé que analizando errores y aciertos se llega a la respuesta."
+            twitter="https://twitter.com/sandra9ro" email="mailto:romeroortiz.sandra@gmail.com"
+            github="https://github.com/sandra9ro" linkedin="https://www.linkedin.com/in/sandra-ro"></partial>
+          <!--Sara-->
+          <partial src="_about-us.html" img="./assets/images/sara.jpg" title-img="Sara Rojas"
+            alt-about-us="Primer plano de Sara Rojas" name="Sara Rojas"
+            desc="Antes escribía noticias y reportajes, ahora líneas de código. Por eso, estoy acostumbrada a trabajar bajo presión, a buscar (y rebuscar) información donde haga falta y a hacer preguntas para entender bien las cosas. Tengo muchas ganas de seguir explorando el mundo IT, ¿me ayudas a descubrirlo?"
+            twitter="https://twitter.com/srojasz87" email="mailto:srojasz@gmail.com" github="https:/ github.com/srojasz"
+            linkedin="https://es.linkedin.com/in/sararojas"></partial>
+          <!--Isa-->
+          <partial src="_about-us.html" title-img="Isabel del Real" alt-about-us="Primer plano de Isabel del Real"
+            name="Isabel del Real" img="./assets/images/isa.jpg"
+            desc="Ingeniera informática y matemática en proceso, que busca coger más experiencia y soltura en la programación. He trabajado como back-end anteriormente y, gracias a Adalab, voy a aprender front-end. Me gusta aprender nuevos lenguajes. Ilusionada por descubrir qué esconde este mundillo y hacer grandes amistades en él."
+            twitter="https://twitter.com/ibeldelr" email="mailto:i.beldelreal@gmail.com"
+            github="https://github.com/ibelreal" linkedin="https://www.linkedin.com/in/ibeldelrealaraujo"></partial>
+        </section>
+      </section>
+    </div>
+  </main>
+  <partial src="_footer.html"></partial>
+</body>
+
 </html>
