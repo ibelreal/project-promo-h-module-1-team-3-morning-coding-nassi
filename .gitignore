@@ -50,3 +50,5 @@ node_modules/
 *.js.map
 
 
+### Public folder
+public
