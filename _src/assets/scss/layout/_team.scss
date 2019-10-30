@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rubik&display=swap");
@@ -23,37 +22,26 @@ $darkColorBase: #099d8d;
 
   &__article {
     @include text;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     line-height: 1.5;
     margin: 0.9375rem 0.9375rem 1.875rem 0.9375rem;
   }
 }
 
-
-
 @media all and (min-width: 768px) {
-
-
-
-
   .team__title {
     color: $darkColorBase;
     margin-top: 0rem;
-
   }
 
   .team__article {
     opacity: 0.67;
   }
-
 }
 
 @media all and (min-width: 1200px) {
-
-  .team-container {
+  .team {
     margin: 0rem;
-    padding: 45px 300px 0px;
-
+    padding: 45px 200px 0px;
   }
-
 }
