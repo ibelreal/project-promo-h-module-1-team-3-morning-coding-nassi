@@ -3,109 +3,114 @@
 
 $colorBase: #099d8d;
 
-
 .formContainer {
-@include centerColumn;
+  @include centerColumn;
 
-
-
-  &__title{
+  &__title {
     text-align: center;
     margin: 0;
     @include bigTitle;
-   }
-  
-   &__text{
-     width: 90%;
-     text-align: center;
-     @include text;
-   
-      &--small{
-        font-size: 0.8rem;
-        margin-bottom: 1.5rem;
-      }
+  }
+
+  &__text {
+    width: 90%;
+    text-align: center;
+    @include text;
+
+    &--small {
+      font-size: 0.8rem;
+      margin-bottom: 1.5rem;
     }
+  }
 }
 
 .asterisk {
   color: aqua;
 }
 
-.form{
+.form {
   /*@include centerColumn;*/
   display: block;
   width: 90%;
 
-    &__label{
-      display: block;
-      margin: 0.8125rem 0;
-      width:100%;
-      font-family: $fontFamilyText;
-      
+  &__label {
+    display: block;
+    margin: 0.8125rem 0;
+    width: 100%;
+    font-family: $fontFamilyText;
+  }
 
-    }
-      
-    &__input {
-      width:100%;
+  &__input {
+    width: 100%;
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 6.5rem;
+    margin: 0.8125rem 0;
+  }
+  &__button {
+    width: 290px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: $colorBase;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .form__button {
+    width: 30vw;
+    float: right;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .formContainer {
+    width: 80%;
+
+    &__title {
+      width: 80%;
     }
 
-    &__textarea{
-      width: 100%;
-      min-height: 6.5rem;
-      margin: 0.8125rem 0;
+    &__text {
+      width: 80%;
     }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+
+    &__name {
+      min-width: 700px;
+    }
+
+    &__emailPhone {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 700px;
+    }
+
+    &__email {
+      width: 60%;
+    }
+
+    &__phone {
+      width: 30%;
+    }
+
+    &__message {
+      min-width: 700px;
+    }
+
     &__button {
-      width: 290px;
-      height: 45px;
-      border-radius: 4px;
-      background-color: $colorBase;
-      text-transform: uppercase;
-      color: white;
-      width: 100%;
-
-      animation: bounce-top 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-    }    
-      @keyframes bounce-top {
-        0% {
-          transform: translateY(-45px);
-          animation-timing-function: ease-in;
-          opacity: 1;
-        }
-        24% {
-          opacity: 1;
-        }
-        40% {
-          transform: translateY(-24px);
-          animation-timing-function: ease-in;
-        }
-        65% {
-          transform: translateY(-12px);
-          animation-timing-function: ease-in;
-        }
-        82% {
-          transform: translateY(-6px);
-          animation-timing-function: ease-in;
-        }
-        93% {
-          transform: translateY(-4px);
-          animation-timing-function: ease-in;
-        }
-        25%,55%, 75%,
-        87% {
-          transform: translateY(0px);
-          animation-timing-function: ease-out;
-        }
-        100% {
-          transform: translateY(0px);
-          animation-timing-function: ease-out;
-          opacity: 1;
-        }
-      
-      
+      align-self: flex-end;
+      margin-bottom: 2rem;
     }
-
-    }
-  
-
-
-
+  }
+}

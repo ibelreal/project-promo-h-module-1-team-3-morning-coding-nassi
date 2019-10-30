@@ -3,46 +3,39 @@
 
 $colorBase: #099d8d;
 
-
 /* Empiezo a reescribir el SAAS */
 
 .aboutus {
   @include centerColumn;
   width: 100%;
-  
+
   &__title {
-
-  @include bigTitle;
-  @include textCenterColumn;
-  margin-bottom: 2.5rem;
-
-}
-
+    @include bigTitle;
+    @include textCenterColumn;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .adalabers {
   @include centerColumn;
   width: 100%;
-  
 
-  &__card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  @include textCenterColumn;
-  width: 100%;
-  margin-bottom: 2.5rem;
-  
+    @include textCenterColumn;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
 }
 
-}
-
-.imgContainer{
-  width:45%;
-  height:45%;
-  margin:0 auto;
+.imgContainer {
+  width: 45%;
+  height: 45%;
+  margin: 0 auto;
   padding: 0rem;
 
   /*Preguntar por qué tengo que centrar con margin 0 auto y no con flex, que no me hace ni caso */
@@ -51,87 +44,73 @@ $colorBase: #099d8d;
     width: 100%;
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08);
-  
   }
-  
 }
-
-
 
 .infoAdalaber {
   @include centerColumn;
   width: 85%;
 
-  &__name{
+  &__name {
     @include adalabersName;
-    text-align: center; 
-    
-   }
-
-   &__text{
-    @include text;
+    text-align: center;
   }
 
+  &__text {
+    @include text;
+  }
 }
 
-
-.socialMedia{
+.socialMedia {
   margin-bottom: 2.5rem;
 
-  &__list{
+  &__list {
     margin-block-start: 0rem;
     margin-block-end: 0rem;
     padding: 0rem;
-
   }
 
-  &__list__icon{
+  &__list__icon {
+    display: inline-block;
+    list-style: none;
 
-  display: inline-block;
-  list-style: none;
-  
-  
-    
-    & a{
+    & a {
       text-decoration: none;
       color: $colorBase;
-      padding: 1rem 0 0 0;
-      
-    
-      &:hover{
+      padding: 0.5rem;
+
+      &:hover {
         background-color: $colorBase;
-        color:white;
+        color: white;
       }
     }
+  }
+
+  .dot {
+    height: 3px;
+    width: 3px;
+    background-color: $colorBase;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    padding: 0rem;
+  }
 }
 
-.dot {
-  height: 3px;
-  width: 3px;
-  background-color: $colorBase;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 0.3rem;
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
-  padding: 0rem;
-}
-}
-
-
-@media all and (min-width:768px) {
-
+@media all and (min-width: 768px) {
   .adalabers__card {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
     width: 90%;
-    
-    .imgContainer{
+
+    .imgContainer {
       margin-left: 0rem;
     }
-  
+
     .infoAdalaber {
       display: flex;
       flex-direction: column;
@@ -139,27 +118,27 @@ $colorBase: #099d8d;
       justify-content: flex-start;
       width: 70%;
 
-      &__name{
-      text-align: left;
-      margin: 0rem;
-      
+      &__name {
+        text-align: left;
+        margin: 0rem;
       }
-    
-      &__text{
-      text-align: left;
+
+      &__text {
+        text-align: left;
       }
     }
-  
+    .twitter {
+      padding-left: 0;
+    }
   }
 
-    
   .adalabers__card:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     width: 90%;
 
-    .imgContainer{
+    .imgContainer {
       margin-left: 1.5rem;
       margin-right: 0rem;
     }
@@ -171,61 +150,52 @@ $colorBase: #099d8d;
       justify-content: flex-start;
       width: 70%;
 
-      &__name{
-      text-align: right;
-      
+      &__name {
+        text-align: right;
       }
-    
-      &__text{
-      text-align: right;
+
+      &__text {
+        text-align: right;
       }
     }
-  
-  }
-  
- 
-  
-   .imgContainer{
 
+    .twitter {
+      padding-left: 0.5rem;
+    }
+
+    .linkedin {
+      padding-right: 0;
+    }
+  }
+
+  .imgContainer {
     width: 30%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     height: auto;
 
-   
-   &__photo{
-     width: 100%;
-   }
-
+    &__photo {
+      width: 100%;
+    }
   }
-
-
-
-
 }
 
-@media all and (min-width:1200px) {
-
-  .aboutus{
+@media all and (min-width: 1200px) {
+  .aboutus {
     @include centerColumn;
- 
   }
 
-  .adalabers{
-  
-   width: 100%;
-    
-  
-  &__card {
+  .adalabers {
+    width: 100%;
 
-width: 60%;
-align-self: center;
-} 
-  
+    &__card {
+      width: 60%;
+      align-self: center;
+    }
 
-  &__card:nth-child(even){
-  width: 60%;
-  align-self: center;
-}
+    &__card:nth-child(even) {
+      width: 60%;
+      align-self: center;
+    }
   }
 }
