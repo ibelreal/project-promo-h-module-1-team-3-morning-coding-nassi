@@ -8,15 +8,11 @@ Nos encantaría que tú, que ya conoces a fondo este sector, nos tendieras la ma
 
 ## Y, puestos a pedir, ¿por qué no nos das una ⭐ y sigues nuestros perfiles de GitHub para ver cómo evolucionamos en el sector?
 
-> ### https://github.com/nlsabariego
->
-> ### https://github.com/anapayanruiz
->
-> ### https://github.com/sandra9ro
->
-> ### https://github.com/srojasz
->
-> ### https://github.com/ibelreal
+https://github.com/nlsabariego
+https://github.com/anapayanruiz
+https://github.com/sandra9ro
+https://github.com/srojasz
+https://github.com/ibelreal
 
 ![Coding Nassi](_src/assets/images/codingnassi.png)
 
