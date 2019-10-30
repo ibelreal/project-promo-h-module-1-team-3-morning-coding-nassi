@@ -81,6 +81,7 @@ $colorBase: #099d8d;
       text-decoration: none;
       color: $colorBase;
       padding: 0.5rem;
+      transition: all ease 2s;
 
       &:hover {
         background-color: $colorBase;
