@@ -35,8 +35,9 @@ $colorBase: #099d8d;
 .imgContainer {
   width: 45%;
   height: 45%;
-  margin: 0 auto;
+  justify-content: center;
   padding: 0rem;
+  margin-bottom: 1rem;
 
   /*Preguntar por qué tengo que centrar con margin 0 auto y no con flex, que no me hace ni caso */
 
@@ -59,12 +60,12 @@ $colorBase: #099d8d;
 
   &__text {
     @include text;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .socialMedia {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 
   &__list {
     margin-block-start: 0rem;
