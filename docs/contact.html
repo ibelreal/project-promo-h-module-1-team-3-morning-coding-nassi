@@ -4,17 +4,19 @@
     <head>
         <meta charset="utf-8" />
         <!--Aquí van las referencias de CSS-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!--Aquí tienen que ir el resto de links del header, footer, etc-->
         <!--Esto son las fuentes disponibles en toda la web-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRubik:500&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./assets/css/pages/contact.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-        <script src="https://kit.fontawesome.com/61294e7035.js" crossorigin="anonymous">
-</script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/pages/contact.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+        <script src="https://kit.fontawesome.com/61294e7035.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
         <title>Contacta con nosotros</title>
     </head>
     
@@ -23,7 +25,7 @@
             <!-- <header class="page__header">@@label</header> -->
             <!-- Aquí empieza el html de Ana -->
             <header class="header">
-                 <h1 class="header__title">coding nassi</h1>
+                 <h1 class="header__title">coding n<span>a</span>ssi</h1>
 
                 <nav class="header__nav">
                     <ul class="header__list">
@@ -56,27 +58,38 @@
 son obligatorios.</p>
                     <section
                     class="form">
-                        <form action="/signup" method="POST">
-                            <label class="form__label" for="name">Nombre completo <span class="asterisk">*</span>
+                        <form action="https://formspree.io/mnqaobwq" method="POST">
+                            <div class="form__name">
+                                <label class="form__label" for="name">Nombre completo <span class="asterisk">*</span>
 
-                            </label>
-                            <input class="form__input" class="form__input" placeholder="Nombre" name="name"
-                            type="text" id="name" pattern="[A-Za-z ]+" required>
-                            <label class="form__label" for="email__address">email <span class="asterisk">*</span>
+                                </label>
+                                <input class="form__input" class="form__input" placeholder="Nombre" name="name"
+                                type="text" id="name" pattern="[A-Za-z ]+" required />
+                            </div>
+                            <div class="form__emailPhone">
+                                <div class="form__email">
+                                    <label class="form__label" for="email__address">Email <span class="asterisk">*</span>
 
-                            </label>
-                            <input class="form__input" placeholder=" nombre.apellido@mail.com" name="email"
-                            type="email" id="email__address" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
-                            required>
-                            <label class="form__label" for="phone__number">Teléfono</label>
-                            <input class="form__input" placeholder="Ej:123456789"
-                            name="phone" type="number" id="phone__number" pattern="([+])+[0-9]{9-11}">
-                            <label class="form__label" for="message">Mensaje <span class="asterisk">*</span>
+                                    </label>
+                                    <input class="form__input" placeholder=" nombre.apellido@mail.com" name="email"
+                                    type="email" id="email__address" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                                    required />
+                                </div>
+                                <div class="form__phone">
+                                    <label class="form__label" for="phone__number">Teléfono</label>
+                                    <input class="form__input" placeholder="Ej:123456789"
+                                    name="phone" type="number" id="phone__number" pattern="([+])+[0-9]{9-11}"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form__message">
+                                <label class="form__label" for="message">Mensaje <span class="asterisk">*</span>
 
-                            </label>
-                            <textarea class="form__textarea" placeholder="¿Qué necesitas?" name="message"
-                            id="message" type="text" required></textarea>
-                            <input class="form__button" type="submit" value="enviar">
+                                </label>
+                                <textarea class="form__textarea" placeholder="¿Qué necesitas?" name="message"
+                                id="message" type="text" required></textarea>
+                            </div>
+                            <input class="form__button" type="submit" value="enviar" />
                         </form>
             </section>
             </section>
@@ -85,20 +98,21 @@ son obligatorios.</p>
         <footer class="footer">
             <p class="footer__copy">coding nassi &copy; 2019</p>
             <nav class="footer__menu">
-                <ul class="footer__menu__ul">
-                    <li class="footer__menu__li"> <a class="footer__link__team" href="#team">equipo</a>
+                <ul class="footer__list">
+                    <li class="footer__listItem"> <a class="footer__link" href="#team">equipo</a>
 
                     </li>
-                    <li class="footer__menu__li"> <a class="footer__link__about__us" href="#about-us">quiénes somos</a>
+                    <li class="footer__listItem"> <a class="footer__link" href="#about-us">quiénes somos</a>
 
                     </li>
-                    <li class="footer__menu__li"> <a class="footer__link__contact" href="contact.html">contacto</a>
+                    <li class="footer__listItem"> <a class="footer__link" href="contact.html">contacto</a>
 
                     </li>
                 </ul>
             </nav>
             <p class="footer__logo">
-                <img class="logo-adalab" src="./assets/images/logo-adalab.png" alt="logo adalab">
+                <img class="logo-adalab" src="./assets/images/logo-adalab.png" alt="logo adalab"
+                />
             </p>
         </footer>
     </body>
