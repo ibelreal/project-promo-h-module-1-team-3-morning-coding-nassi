@@ -54,10 +54,12 @@ $colorBase: #099d8d;
   &__name {
     @include adalabersName;
     text-align: center;
+    margin-bottom: 0.4rem;
   }
 
   &__text {
     @include text;
+    margin-bottom: 1rem;
   }
 }
 
@@ -120,7 +122,6 @@ $colorBase: #099d8d;
 
       &__name {
         text-align: left;
-        margin: 0rem;
       }
 
       &__text {
