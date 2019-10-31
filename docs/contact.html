@@ -25,14 +25,16 @@
             <!-- <header class="page__header">@@label</header> -->
             <!-- Aquí empieza el html de Ana -->
             <header class="header">
-                 <h1 class="header__title">coding n<span>a</span>ssi</h1>
+                 <h1 class="header__title">
+    <a href="./index.html#home" class="header__link"> coding n<span>a</span>ssi</a>
+  </h1>
 
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__listItem"> <a href="#team" class="header__link">equipo</a>
+                        <li class="header__listItem"> <a href="./index.html#team" class="header__link">equipo</a>
 
                         </li>
-                        <li class="header__listItem"> <a href="#about-us" class="header__link">quienes somos</a>
+                        <li class="header__listItem"> <a href="./index.html#about-us" class="header__link">quienes somos</a>
 
                         </li>
                         <li class="header__listItem"> <a href="./contact.html" class="header__link">contacto</a>
@@ -50,47 +52,47 @@
             <section class="formContainer container">
                  <h2 class="formContainer__title">contacto</h2>
 
-                <p class="formContainer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid obcaecati
-                    nemo laborum beatae modi repellendus. Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Aliquid obcaecati nemo laborum beatae modi repellendus.</p>
-                <p
-                class="formContainer__text--small">Todos los campos marcados con <span class="asterisk">*</span>
+                <p class="formContainer__text">¿Quieres contactar con nosotras? Estaremos encantadas de responder a todas
+                    tus dudas y de echarte un cable siempre que lo necesites. Solo tienes que
+                    rellenar este formulario y, a la mayor brevedad posible, nos pondremos
+                    en contacto contigo.</p>
+                <p class="formContainer__text--small">Todos los campos marcados con <span class="asterisk">*</span>
 son obligatorios.</p>
-                    <section
-                    class="form">
-                        <form action="https://formspree.io/mnqaobwq" method="POST">
-                            <div class="form__name">
-                                <label class="form__label" for="name">Nombre completo <span class="asterisk">*</span>
+                <section
+                class="form">
+                    <form action="https://formspree.io/mnqaobwq" method="POST">
+                        <div class="form__name">
+                            <label class="form__label" for="name">Nombre completo <span class="asterisk">*</span>
+
+                            </label>
+                            <input class="form__input" class="form__input" placeholder="Nombre" name="name"
+                            type="text" id="name" pattern="[A-Za-z ]+" required />
+                        </div>
+                        <div class="form__emailPhone">
+                            <div class="form__email">
+                                <label class="form__label" for="email__address">Email <span class="asterisk">*</span>
 
                                 </label>
-                                <input class="form__input" class="form__input" placeholder="Nombre" name="name"
-                                type="text" id="name" pattern="[A-Za-z ]+" required />
+                                <input class="form__input" placeholder=" nombre.apellido@mail.com" name="email"
+                                type="email" id="email__address" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                                required />
                             </div>
-                            <div class="form__emailPhone">
-                                <div class="form__email">
-                                    <label class="form__label" for="email__address">Email <span class="asterisk">*</span>
+                            <div class="form__phone">
+                                <label class="form__label" for="phone__number">Teléfono</label>
+                                <input class="form__input" placeholder="Ej:123456789"
+                                name="phone" type="number" id="phone__number" pattern="([+])+[0-9]{9-11}"
+                                />
+                            </div>
+                        </div>
+                        <div class="form__message">
+                            <label class="form__label" for="message">Mensaje <span class="asterisk">*</span>
 
-                                    </label>
-                                    <input class="form__input" placeholder=" nombre.apellido@mail.com" name="email"
-                                    type="email" id="email__address" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
-                                    required />
-                                </div>
-                                <div class="form__phone">
-                                    <label class="form__label" for="phone__number">Teléfono</label>
-                                    <input class="form__input" placeholder="Ej:123456789"
-                                    name="phone" type="number" id="phone__number" pattern="([+])+[0-9]{9-11}"
-                                    />
-                                </div>
-                            </div>
-                            <div class="form__message">
-                                <label class="form__label" for="message">Mensaje <span class="asterisk">*</span>
-
-                                </label>
-                                <textarea class="form__textarea" placeholder="¿Qué necesitas?" name="message"
-                                id="message" type="text" required></textarea>
-                            </div>
-                            <input class="form__button" type="submit" value="enviar" />
-                        </form>
+                            </label>
+                            <textarea class="form__textarea" placeholder="¿Qué necesitas?" name="message"
+                            id="message" type="text" required></textarea>
+                        </div>
+                        <input class="form__button" type="submit" value="enviar" />
+                    </form>
             </section>
             </section>
         </main>
