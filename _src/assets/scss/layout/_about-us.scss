@@ -3,7 +3,7 @@
 
 $colorBase: #099d8d;
 
-/* Empiezo a reescribir el SAAS */
+/* Aboutus */
 
 .aboutus {
   @include centerColumn;
@@ -39,8 +39,6 @@ $colorBase: #099d8d;
   padding: 0rem;
   margin-bottom: 1rem;
 
-  /*Preguntar por qué tengo que centrar con margin 0 auto y no con flex, que no me hace ni caso */
-
   &__photo {
     width: 100%;
     border-radius: 4px;
@@ -65,7 +63,7 @@ $colorBase: #099d8d;
 }
 
 .socialMedia {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 
   &__list {
     margin-block-start: 0rem;
@@ -80,7 +78,7 @@ $colorBase: #099d8d;
     & a {
       text-decoration: none;
       color: $colorBase;
-      padding: 0.5rem;
+      padding: 0.2rem;
       transition: all ease 2s;
 
       &:hover {
