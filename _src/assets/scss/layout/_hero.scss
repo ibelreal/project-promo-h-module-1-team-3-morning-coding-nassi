@@ -3,9 +3,10 @@
 
 .hero {
   font-family: $fontFamilyText;
-  font-weight: $mainFontWeight;
+  font-weight: $boldFontWeight;
   font-size: 1.125rem;
   padding-bottom: 2.875rem;
+  text-align: left;
 
   &__image {
     width: 100%;
