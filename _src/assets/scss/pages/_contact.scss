@@ -37,6 +37,7 @@ $colorBase: #099d8d;
 .form {
   /*@include centerColumn;*/
   display: block;
+  width: 18.13rem;
 
   &__label {
     display: block;
@@ -50,6 +51,7 @@ $colorBase: #099d8d;
     width: 100%;
     font-family: $fontFamilyText;
     color: $fontTextColor;
+    height: 2.13rem;
   }
 
   &__textarea {
