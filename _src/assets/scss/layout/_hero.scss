@@ -8,8 +8,15 @@
   padding-bottom: 2.875rem;
   text-align: left;
 
+  &__containerImage {
+    position: relative;
+    overflow: hidden;
+  }
+
   &__image {
     width: 100%;
+    position: relative;
+    top: 60px;
   }
 
   &__title {
@@ -24,9 +31,11 @@
 
   @media all and (min-width: 768px) {
     &__containerImage {
-      position: relative;
       height: 300px;
-      overflow: hidden;
+    }
+
+    &__image {
+      top: -80px;
     }
 
     &__title {
@@ -41,6 +50,10 @@
   @media all and (min-width: 1200px) {
     &__containerImage {
       height: 250px;
+    }
+
+    &__image {
+      top: -160px;
     }
 
     &__title {
