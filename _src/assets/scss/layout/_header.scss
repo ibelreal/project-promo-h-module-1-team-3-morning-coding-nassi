@@ -13,18 +13,55 @@
   z-index: 2;
   opacity: 0.9;
 
+  &__container-animation {
+    width: 100vw;
+    & .header__title:hover {
+      height: 40vh;
+      animation-name: intro;
+      animation-duration: 2s;
+      background-image: url(../images/nessi-background.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .container-nessi {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    border: 1px solid red;
+    width: 10rem;
+    height: 10rem;
+    transition: all ease 2s;
+
+    & .header__title:hover {
+      left: 10rem;
+    }
+  }
+
   &__title {
+    min-height: 10vh;
     font-size: $fontSizeText;
     margin: 0rem;
     padding: 0.9375rem 0rem;
     line-height: 1.88;
   }
 
-  &__title:hover {
-    span {
-      transform: rotate(-90deg);
-      display: inline-block;
-      transition: 1s ease-in-out;
+  @keyframes intro {
+    0% {
+      opacity: 0;
+      height: 10vh;
+    }
+    50% {
+      opacity: 0.5;
+      // height: 20vh;
+    }
+
+    100% {
+      opacity: 1;
+      height: 40vh;
     }
   }
 
@@ -38,8 +75,9 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin-block-start: 0.5rem;
-    margin-block-end: 0.5rem;
+    margin: 0;
+    // margin-block-start: 0.5rem;
+    // margin-block-end: 0.5rem;
     padding-inline-start: 0;
     height: 1.813rem;
   }
