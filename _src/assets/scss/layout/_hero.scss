@@ -7,57 +7,44 @@
   font-size: 1.125rem;
   padding-bottom: 2.875rem;
   text-align: left;
-
-  &__containerImage {
-    position: relative;
-    overflow: hidden;
-  }
-
-  &__image {
-    width: 100%;
-    position: relative;
-    top: 60px;
-  }
+  background-image: url(../images/team-coding-nassi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
 
   &__title {
-    background: $headerFontColor;
     position: absolute;
+    bottom: 0;
+    background: $headerFontColor;
     text-align: center;
-    transform: translateY(-50%);
     padding: 0.9375rem;
     margin: 0 0.9375rem;
     font-family: $fontFamilyText;
   }
 
   @media all and (min-width: 768px) {
-    &__containerImage {
-      height: 300px;
-    }
-
-    &__image {
-      top: -80px;
-    }
-
     &__title {
-      margin: 0 0 0 2.8125rem;
+      display: block;
+      margin-left: 2.8125rem;
       padding: 1rem 1rem;
       width: 350px;
-      opacity: 0.8;
-      transform: translateY(-100%);
+      opacity: 0.9;
     }
   }
 
   @media all and (min-width: 1200px) {
-    &__containerImage {
-      height: 250px;
-    }
-
-    &__image {
-      top: -160px;
-    }
-
     &__title {
-      margin: 0 0 0 8.875rem;
+      margin-left: 8.875rem;
     }
   }
+}
+
+.hero-contact {
+  background-image: url(../images/team-coding-nassi-contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
 }
