@@ -2,46 +2,18 @@
 @import "../core/mixins.scss";
 
 .header {
-  &__container-animation {
-    width: 100vw;
-    @include textCenterColumn;
-    @include headerItem;
-    background-color: $darkColorBase;
-    color: $headerFontColor;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    opacity: 0.9;
-
-    &:hover {
-      height: 40vh;
-      animation-name: intro;
-      animation-duration: 2s;
-      background-image: url(../images/nessi-background.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    @keyframes intro {
-      0% {
-        opacity: 0;
-        height: 7vh;
-      }
-      50% {
-        opacity: 0.5;
-      }
-
-      100% {
-        opacity: 1;
-        height: 40vh;
-      }
-    }
-  }
+  width: 100vw;
+  @include textCenterColumn;
+  @include headerItem;
+  background-color: $darkColorBase;
+  color: $headerFontColor;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0.9;
 
   &__title {
-    // min-height: 7vh;
     font-size: $fontSizeText;
     margin: 0rem;
     padding: 1rem 0;
@@ -57,7 +29,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // min-height: 6vh;
     padding-inline-start: 0;
   }
 
@@ -75,13 +46,11 @@
   }
 
   @media all and (min-width: 768px) {
-    &__container-animation {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 2.813rem;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.813rem;
 
     &__nav {
       background-color: transparent;
@@ -110,5 +79,39 @@
 
   & .header__title:hover {
     left: 10rem;
+  }
+}
+
+.header:hover {
+  height: 40vh;
+  animation-name: intro;
+  animation-duration: 2s;
+  background-image: url(../images/nessi-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-fill-mode: forwards;
+  .header__title,
+  .header__nav {
+    background-color: transparent;
+  }
+}
+
+.header__title,
+.header__nav {
+  transition: all 0.5s;
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+    height: 7vh;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    height: 40vh;
   }
 }
