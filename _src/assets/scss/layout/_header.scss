@@ -2,6 +2,7 @@
 @import "../core/mixins.scss";
 
 .header {
+  height: 7vh;
   width: 100vw;
   @include textCenterColumn;
   @include headerItem;
@@ -12,11 +13,14 @@
   left: 0px;
   z-index: 1;
   opacity: 0.9;
+  animation-name: close;
+  animation-duration: 2s;
+  transition: height ease 1s;
 
   &__title {
     font-size: $fontSizeText;
     margin: 0rem;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
   }
 
   &__nav {
@@ -69,7 +73,7 @@
 }
 
 .header:hover {
-  height: 40vh;
+  height: 60vh;
   animation-name: intro;
   animation-duration: 2s;
   background-image: url(../images/nessi-background.jpg);
@@ -77,35 +81,51 @@
   background-repeat: no-repeat;
   background-position: center;
   animation-fill-mode: forwards;
-  .header__title,
+  opacity: 1;
+
   .header__nav {
     background-color: transparent;
   }
 }
+// .header__title,
+// .header__nav {
+// }
 
-.header__title,
-.header__nav {
-  transition: all 0.5s;
-}
-@keyframes intro {
-  0% {
-    opacity: 0;
-    height: 7vh;
-  }
-  50% {
-    opacity: 0.5;
-  }
+// @keyframes intro {
+//   0% {
+//     opacity: 0;
+//     height: 7vh;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
 
-  100% {
-    opacity: 1;
-    height: 60vh;
-  }
-}
+//   100% {
+//     opacity: 1;
+//     height: 60vh;
+//   }
+// }
+
+// @keyframes close {
+//   0% {
+//     opacity: 1;
+//     height: 60vh;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+
+//   100% {
+//     opacity: 0;
+//     height: 7vh;
+//   }
+// }
 
 //nessi
 
 .container-nessi {
   display: none;
+  position: absolute;
 }
 .header:hover {
   & img {
