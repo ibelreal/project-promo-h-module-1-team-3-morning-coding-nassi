@@ -5,18 +5,20 @@ $colorBase: #099d8d;
 
 .formContainer {
   @include centerColumn;
-  width: 290px;
+  width: 18.125rem;
   margin: 0 auto;
 
   &__title {
     text-align: center;
-    margin: 0;
+    margin: 1.875rem 0 0.9375rem 0;
+    line-height: 2.8125rem;
     @include bigTitle;
   }
 
   &__text {
     width: 100%;
     text-align: center;
+    line-height: 1.5;
     @include text;
     margin-bottom: 1.5rem;
 
@@ -51,7 +53,7 @@ $colorBase: #099d8d;
     width: 100%;
     font-family: $fontFamilyText;
     color: $fontTextColor;
-    height: 2.13rem;
+    height: 2.8125rem;
   }
 
   &__textarea {
@@ -62,8 +64,8 @@ $colorBase: #099d8d;
     color: $fontTextColor;
   }
   &__button {
-    width: 290px;
-    height: 45px;
+    width: 18.125rem;
+    height: 2.8125rem;
     border-radius: 4px;
     background-color: $colorBase;
     text-transform: uppercase;
@@ -76,7 +78,7 @@ $colorBase: #099d8d;
 
 @media all and (min-width: 768px) {
   .formContainer {
-    width: 442px;
+    width: 27.625rem;
     margin: 0 auto;
   }
 
@@ -92,7 +94,7 @@ $colorBase: #099d8d;
 
 @media all and (min-width: 1200px) {
   .formContainer {
-    width: 601px;
+    width: 37.5625rem;
     margin: 0 auto;
 
     &__title {
