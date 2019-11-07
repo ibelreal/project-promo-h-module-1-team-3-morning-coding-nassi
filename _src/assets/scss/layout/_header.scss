@@ -71,27 +71,25 @@
   }
 }
 
+.container-nessi {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 18rem;
+  width: 10rem;
+  height: 10rem;
+}
 .header:hover {
   height: 60vh;
-  animation-name: intro;
-  animation-duration: 2s;
   background-image: url(../images/nessi-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation-fill-mode: forwards;
   opacity: 1;
 
   .header__nav {
     background-color: transparent;
   }
-}
-
-.container-nessi {
-  display: none;
-  position: absolute;
-}
-.header:hover {
   & img {
     display: block;
     animation-name: nessi;
@@ -133,51 +131,3 @@
     top: 30%;
   }
 }
-.container-nessi {
-  position: relative;
-  top: 20%;
-  left: 18rem;
-  width: 10rem;
-  height: 10rem;
-  //transition: all ease 5s;
-}
-
-// .animation-letter {
-//   position: relative;
-//   animation: rotate 7s linear infinite forwards;
-//   transform: rotate(-180deg);
-//   margin-left: 2px;
-//   display: inline-block;
-//   font-size: 22px;
-//   text-transform: none;
-// }
-
-// @keyframes rotate {
-//   25% {
-//     transform: translateY(0px) rotate(-360deg);
-//   }
-//   50% {
-//     transform: translateY(1px) rotate(-260deg);
-//   }
-//   99% {
-//     transform: translateY(5px) rotate(-180deg);
-//   }
-// }
-
-/*@keyframes translate {
-  7% {
-    transform: translateY(2px);
-  }
-  25% {
-  }
-  60% {
-    transform: ;
-  }
-  80% {
-    transform: translateY(2px);
-  }
-  100% {
-    transform: ;
-  }
-}
-*/
