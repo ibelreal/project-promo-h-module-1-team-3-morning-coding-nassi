@@ -10,8 +10,8 @@
   background-color: $darkColorBase;
   color: $headerFontColor;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 1;
   opacity: 0.9;
   transition: height ease 1s;
@@ -40,7 +40,7 @@
     transition: all 0.5s;
 
     &:hover {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 
@@ -76,8 +76,8 @@
   position: absolute;
   top: 20%;
   left: 18rem;
-  width: 10rem;
-  height: 10rem;
+  width: 13rem;
+  height: 14rem;
 }
 .header:hover {
   height: 60vh;
@@ -99,35 +99,57 @@
 }
 @keyframes nessi {
   0% {
-    left: -20rem;
+    left: -50vh;
     top: 30%;
   }
   20% {
-    left: -10rem;
+    left: -25vh;
     top: 20%;
   }
   40% {
-    left: 0rem;
+    left: 0vh;
     top: 30%;
   }
   50% {
-    left: 5rem;
-    top: 30%;
+    left: 10vh;
+    top: 20%;
   }
   60% {
-    left: 10rem;
+    left: 20vh;
     top: 30%;
   }
   70% {
-    left: 15rem;
-    top: 30%;
+    left: 30vh;
+    top: 20%;
   }
   80% {
-    left: 18rem;
+    left: 40vh;
     top: 30%;
   }
   100% {
-    left: 20rem;
-    top: 30%;
+    left: 50vh;
+    top: 20%;
+  }
+}
+
+.animation-letter {
+  position: relative;
+  animation: rotate 7s linear infinite forwards;
+  transform: rotate(-180deg);
+  margin-left: 2px;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+@keyframes rotate {
+  25% {
+    transform: translateY(0px) rotate(-360deg);
+  }
+  50% {
+    transform: translateY(1px) rotate(-260deg);
+  }
+  99% {
+    transform: translateY(2px) rotate(-180deg);
   }
 }
