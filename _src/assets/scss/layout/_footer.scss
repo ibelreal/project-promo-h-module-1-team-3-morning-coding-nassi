@@ -27,7 +27,8 @@
   &__link {
     color: $fontTextColor;
     text-decoration: none;
-    color: $colorBase;
+    color: $fontTextColor;
+    line-height: 1.875rem;
     padding: 0.2rem;
     transition: all ease 1s;
 
